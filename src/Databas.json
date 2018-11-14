@@ -263,4 +263,156 @@
     "revar": {"1": "#000094", "2": "#FFFFFF", "3": "#FF0000"},
     "campus": "Linköping"
   },
+   {
+    "prog": "Personal och arbetsvetenskap",
+    "model": "Overall",
+    "color": "Vit",
+    "hexColor": "#FFFFFF",
+    "revar": {"1": "#FF0000", "2": "#FFF500", "3": "#17962C"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Kognitionsvetenskap",
+    "model": "Overall",
+    "color": "Grön",
+    "hexColor": "#17962C",
+    "revar": {"1": "#D3D3D3", "2": "#D3D3D3", "3": "#D3D3D3"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Politices",
+    "model": "Overall",
+    "color": "Blå",
+    "hexColor": "#000094",
+    "revar": {"1": "#DE3163", "2": "#DE3163", "3": "#DE3163"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Kandidatprogrammet för Religionsvetenskap",
+    "model": "Overall",
+    "color": "Vit",
+    "hexColor": "#FFFFFF",
+    "revar": {"1": "#580272", "2": "#000000", "3": "#580272"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Beteendevetenskaplig grundkurs",
+    "model": "Overall",
+    "color": "Vit",
+    "hexColor": "#FFFFFF",
+    "revar": {"1": "#000094", "2": "#17962C", "3": "#000094"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Statistik och dataanalysprogrammet",
+    "model": "Overall",
+    "color": "Svart",
+    "hexColor": "#000000",
+    "revar": {"1": "#FF0000", "2": "#FF0000", "3": "#FF0000"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Kultur, Samhälle och Mediegestaltning",
+    "model": "Overall",
+    "color": "Svart",
+    "hexColor": "#000000",
+    "revar": {"1": "#FF0000", "2": "#FFFFFF", "3": "#FF0000"},
+    "campus": "Norrköping"
+  },
+  {
+    "prog": "Psykologi",
+    "model": "Overall",
+    "color": "Grön",
+    "hexColor": "#17962C",
+    "revar": {"1": "#7ED67E", "2": "#7ED67E", "3": "#7ED67E"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Miljövetarprogrammet",
+    "model": "Overall",
+    "color": "Blå",
+    "hexColor": "#000094",
+    "revar": {"1": "#17962C", "2": "#17962C", "3": "#17962C"},
+    "campus": "Norrköping"
+  },
+   {
+    "prog": "Samhälls- och kulturanalys",
+    "model": "Overall",
+    "color": "Orange",
+    "hexColor": "#EC6610",
+    "revar": {"1": "#FF0000", "2": "#FF0000", "3": "#FF0000"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Sektionen för Slöjd, Hantverk och Formgivning",
+    "model": "Hängsel",
+    "color": "Grön",
+    "hexColor": "#92DF00",
+    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Turismprogrammet - Kulturarv och Naturmiljö",
+    "model": "Hängsel",
+    "color": "Vit",
+    "hexColor": "#FFFFFF",
+    "revar": {"1": "#FFDC73", "2": "#FFDC73", "3": "#FFDC73"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Lärarprogrammet",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#FF0000",
+    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "campus": "Linköping och Norrköping"
+  },
+  {
+    "prog": "Arbetsterapeut",
+    "model": "Hängsel",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#800000", "2": "#800000", "3": "#800000"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Medicinsk biologi",
+    "model": "Hängsel",
+    "color": "Grön",
+    "hexColor": "#556B2F",
+    "revar": {"1": "#556B2F", "2": "#556B2F", "3": "#556B2F"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Fysioterapuet",
+    "model": "Hängsel",
+    "color": "Blå",
+    "hexColor": "#00004B",
+    "revar": {"1": "#00004B", "2": "#00004B", "3": "#00004B"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Sjuksköterska",
+    "model": "Hängsel",
+    "color": "Lila",
+    "hexColor": "#580272",
+    "revar": {"1": "#580272", "2": "#580272", "3": "#580272"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Logoped",
+    "model": "Hängsel",
+    "color": "Röd",
+    "hexColor": "#FF0000",
+    "revar": {"1": "#FF0000", "2": "#FF0000", "3": "#FF0000"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Sjuksköterska",
+    "model": "Hängsel",
+    "color": "Blå",
+    "hexColor": "#009FD2",
+    "revar": {"1": "#009FD2", "2": "#009FD2", "3": "#009FD2"},
+    "campus": "Linköping"
+  },
 ]
