@@ -95,4 +95,28 @@
     "revar": {"1": "#FFFFFF", "2": "#FFF500", "3": "#FFFFFF"},
     "campus": "Linköping"
   },
+   {
+    "prog": "Civilingenjör i industriell ekonomi",
+    "model": "Overall",
+    "color": "Gul",
+    "hexColor": "#FFF500",
+    "revar": {"1": "#17962C", "2": "#17962C", "3": "#17962C"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Datavetenskap",
+    "model": "Overall",
+    "color": "Blå",
+    "hexColor": "#000080",
+    "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Högskoleingenjör",
+    "model": "Overall",
+    "color": "Lili",
+    "hexColor": "#580272",
+    "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
 ]
