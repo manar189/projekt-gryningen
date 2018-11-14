@@ -31,6 +31,10 @@ class App extends Component {
     super(props)
     currentPage = page.START; //OBS! Ändra här om du vill se en annan sida från start
     this.startSearch = this.startSearch.bind(this) //Måste vara med om funktionen anropas i render().
+    this.state = {
+      currentPage: page.START
+    }
+
     this.setColor = this.setColor.bind(this)
     this.setModel = this.setModel.bind(this)
     this.setStripes = this.setStripes.bind(this)
@@ -38,8 +42,9 @@ class App extends Component {
   }
 
   startSearch(){
-    currentPage = page.COLOR;
-    this.forceUpdate(); //uppdaterar sidan
+    //currentPage = page.COLOR;
+    this.setState({currentPage: page.COLOR});
+    //this.forceUpdate(); //uppdaterar sidan
   }
 
   setColor(_color){
@@ -69,7 +74,7 @@ class App extends Component {
 
 
   render() {
-    switch (currentPage) {
+    switch (this.state.currentPage) {
       case page.START:
           return (
           <div>
