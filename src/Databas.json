@@ -119,4 +119,148 @@
     "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
     "campus": "Linköping"
   },
+  {
+    "prog": "Civilingenjör i teknisk fysik och elektroteknik",
+    "model": "Overall",
+    "color": "Svart",
+    "hexColor": "#000000",
+    "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Civilingenjör i medicinsk teknik",
+    "model": "Overall",
+    "color": "Svart",
+    "hexColor": "#000000",
+    "revar": {"1": "#FFF500", "2": "#17962C", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Manlig civilingenjör i maskinteknik",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#FF0000",
+    "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Kvinnlig civilingenjör i maskinteknik",
+    "model": "Overall",
+    "color": "RödGul",
+    "hexColor": {"1": "#FF0000", "2": "#FFF500"},
+    "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Kvinnlig civilingenjör i design och produktutveckling",
+    "model": "Overall",
+    "color": "RödGul",
+    "hexColor": {"1": "#FF0000", "2": "#FFF500"},
+    "revar": {"1": "#FFF500", "2": "#EC6610", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Manlig civilingenjör i design och produktutveckling",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#FF0000",
+    "revar": {"1": "#FFF500", "2": "#EC6610", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Manlig civilingenjör i eniergi, miljö, management",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#FF0000",
+    "revar": {"1": "#FFF500", "2": "#17962C", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Kvinnlig civilingenjör i eniergi, miljö, management",
+    "model": "Overall",
+    "color": "RödGul",
+    "hexColor": {"1": "#FF0000", "2": "#FFF500"},
+    "revar": {"1": "#FFF500", "2": "#17962C", "3": "#FFF500"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Matematik (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#009FD2", "2": "#009FD2", "3": "#009FD2"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Biologi (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#17962C", "2": "#17962C", "3": "#17962C"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Kemi (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Fysik (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#000094", "2": "#000094", "3": "#000094"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Systemvetenskapliga programmet",
+    "model": "Overall",
+    "color": "Grön",
+    "hexColor": "#33B9AC",
+    "revar": {"1": "#000094", "2": "#FFFFFF", "3": "#000094"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Systemvetenskapliga programmet",
+    "model": "Overall",
+    "color": "Blå",
+    "hexColor": "#33B9AC",
+    "revar": {"1": "#000094", "2": "#FFFFFF", "3": "#000094"},
+    "campus": "Linköping"
+  },
+  {
+    "prog": "Socionomprogrammet",
+    "model": "Hängsel",
+    "color": "Gul",
+    "hexColor": "#FF9E00",
+    "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
+    "campus": "Norrköping"
+  },
+  {
+    "prog": "Socionomprogrammet",
+    "model": "Hängsel",
+    "color": "Orange",
+    "hexColor": "#FF9E00",
+    "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
+    "campus": "Norrköping"
+  },
+  {
+    "prog": "Affärsjuridik",
+    "model": "Overall",
+    "color": "Gul",
+    "hexColor": "#FFF500",
+    "revar": {"1": "#000094", "2": "#000094", "3": "#000094"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Ekonomi",
+    "model": "Overall",
+    "color": "Vit",
+    "hexColor": "#FFFFFF",
+    "revar": {"1": "#000094", "2": "#FFFFFF", "3": "#FF0000"},
+    "campus": "Linköping"
+  },
 ]
