@@ -397,7 +397,7 @@
     "color": "Lila",
     "hexColor": "#580272",
     "revar": {"1": "#580272", "2": "#580272", "3": "#580272"},
-    "campus": "Linköping"
+    "campus": "Norrköping"
   },
   {
     "prog": "Logoped",
@@ -414,5 +414,5 @@
     "hexColor": "#009FD2",
     "revar": {"1": "#009FD2", "2": "#009FD2", "3": "#009FD2"},
     "campus": "Linköping"
-  },
+  }
 ]
