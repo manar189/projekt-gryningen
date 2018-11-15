@@ -406,13 +406,5 @@
     "hexColor": "#FF0000",
     "revar": {"1": "#FF0000", "2": "#FF0000", "3": "#FF0000"},
     "campus": "Linköping"
-  },
-  {
-    "prog": "Sjuksköterska",
-    "model": "Hängsel",
-    "color": "Blå",
-    "hexColor": "#009FD2",
-    "revar": {"1": "#009FD2", "2": "#009FD2", "3": "#009FD2"},
-    "campus": "Linköping"
   }
 ]
