@@ -1,0 +1,38 @@
+[
+  {
+    "hex": "#EC6610",
+    "color": "Orange"
+  },
+  {
+    "hex": "#C3B091",
+    "color": "Brun"
+  },
+  {
+    "hex": "#000094",
+    "color": "Blå"
+  },
+  {
+    "hex": "#006A4E",
+    "color": "Grön"
+  },
+  {
+    "hex": "#B3B3B3",
+    "color": "Grå"
+  },
+  {
+    "hex": "#FFF500",
+    "color": "Gul"
+  },
+  {
+    "hex": "#580272",
+    "color": "Lila"
+  },
+  {
+    "hex": ["#FF0000", "#FFF500"],
+    "color": "RödGul"
+  },
+  {
+    "hex": "#000000",
+    "color": "Svart"
+  }
+]
