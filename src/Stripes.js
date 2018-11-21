@@ -11,6 +11,11 @@ class Stripes extends Component {
     const chosenModel = this.props.model;
     this.nextPage = this.nextPage.bind(this) //Måste vara med om funktionen anropas i render().
 
+}
+   
+
+
+
     let counter = 0;
     let currentOvve;
 
@@ -28,6 +33,7 @@ class Stripes extends Component {
       this.nextPage(currentOvve);
     }
   }
+
 
 
   render() {
