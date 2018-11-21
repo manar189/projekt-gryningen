@@ -52,7 +52,6 @@ class App extends Component {
   }
 
   setColor(_color){
-
   this.setState({currentPage: page.MODEL});
   selectedColor=_color;
   }
