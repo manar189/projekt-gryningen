@@ -1,8 +1,16 @@
 
-.App {
+body {
   text-align: center;
-  background-color: cyan;
+  background-color: #A5DBD9;
 
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 12vw;
+  color: white;
+  padding: 20vw;
+  margin: 0;
 }
 
 .errorMessage {
@@ -26,22 +34,34 @@
 }
 
 .color-grid-container {
-  margin: 10px;
+  width: 90vw;
+  height: 83vw;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto;
   background: white;
   border-radius: 25px;
-  padding: 10px;
+  margin-bottom: 5vw;
+  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
+  -webkit-box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
+  box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
 }
 
 .grid-item {
-  border-radius: 25px;
+  width:22vw;
+  height:15vw;
+  margin:3.5vw;
+  margin-top: 5vw;
+  border-radius: 2.5vw;
   background-color: rgba(100, 100, 100, 0.8);
-  padding: 20px;
-  padding-top: 40px;
-  margin: 5px;
   font-size: 30px;
   text-align: center;
+  /*Skugga färgrutor: opacity 23% y:21px x:0px blur:10px*/
+  -webkit-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+  box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+
 }
 
 

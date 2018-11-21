@@ -27,9 +27,9 @@ class Color extends Component {
       <div className="color-grid-container">
         {ColorData.map((item, i)=>{
 
-          if(item.hex.length == 2){ //fråga gärna om hur vi kan få bort det hård-kodade färgerna till värderna i item.color[0] och item.color[1].
+          if(item.hex.length == 2){
                     return <div className="grid-item" key={i} onClick={(e) => this.myFunc(item,e)}
-                    style={{ background: 'linear-gradient(to left,yellow 45%, red 55%' , cursor:'pointer'}}>
+                    style={{ background: 'linear-gradient(to right,'+ item.hex[0] +' 50%, '+ item.hex[1] +' 50%' , cursor:'pointer'}}>
 
                     </div>
           }
