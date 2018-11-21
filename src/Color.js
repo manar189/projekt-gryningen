@@ -25,7 +25,7 @@ class Color extends Component {
       <div className="App">
         <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
-        {ColorData.map((item, i)=>{
+        {ColorData.map((item, i) =>{
 
           if(item.hex.length == 2){
                     return <div className="grid-item" key={i} onClick={(e) => this.myFunc(item,e)}
