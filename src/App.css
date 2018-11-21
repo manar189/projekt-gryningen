@@ -8,8 +8,8 @@ body {
 
 
 #left {
- width: 30vw;
-  height: 70vw;
+ width: 46vw;
+  height: 80vw;
   margin: 0 auto;
   padding-top: 8vw;
   background: white;
@@ -21,8 +21,8 @@ body {
 }
 
 #right {
-  width: 30vw;
-  height: 70vw;
+  width: 46vw;
+  height: 80vw;
   margin: 0 auto;
   padding-top: 8vw;
   background: white;
@@ -31,7 +31,16 @@ body {
   float: left;
   border-top-left-radius: 6vw;
   border-bottom-left-radius: 6vw;
-  margin-left: 20vw;
+  margin-left: 8vw;
+}
+
+#ovveBild {
+filter: brightness(0.7) sepia(0.5) saturate(700%);
+}
+
+#hangselBild {
+
+filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate(500%) contrast(0.8);
 }
 
 

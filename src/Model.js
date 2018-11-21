@@ -60,14 +60,13 @@ class Model extends Component {
     return(
       <div className="App">
         <h1 id="colorTextHeader">Välj modell</h1>
-        <div id = "left"> 
-
+        <div id = "left">
+          <img src = "ovve.svg" id="ovveBild"></img>
         </div>
-
         <div id = "right"> 
-
+          <img src = "hangsel.svg" id="hangselBild"></img>
         </div>
-        </div>
+      </div>
       )
   }
 }
