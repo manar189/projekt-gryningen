@@ -34,6 +34,7 @@ class Model extends Component {
           {
             this.firstModel = item.model;
             this.count = 1;
+            console.log("Kommer hit");
           }
           else if(item.model != this.firstModel)
           {

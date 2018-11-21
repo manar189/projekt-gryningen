@@ -48,28 +48,28 @@ class App extends Component {
   }
 
   setColor(_color){
-    selectedColor = _color;
-    currentPage = page.MODEL;
-    this.forceUpdate(); //uppdaterar sidan
+  this.setState({currentPage: page.MODEL});
+  selectedColor=_color;
   }
 
   setModel(_model){
-    selectedModel = _model;
-    currentPage = page.STRIPES;
-    this.forceUpdate(); //uppdaterar sidan
+  this.setState({currentPage: page.STRIPES});
+  selectedModel=_model;
   }
 
   setStripes(_Stripes){ //borde inte behövas, läggs in ifall att.
-    selectedModel = _Stripes;
-    currentPage = page.RESULT;
-    this.forceUpdate(); //uppdaterar sidan
+  this.setState({currentPage: page.RESULT});
+  selectedStripes=_Stripes;
   }
 
+
+  /* Behövs nog ej
   setselectedData(_data){
     selectedData = _data;
     currentPage = page.RESULT;
     this.forceUpdate(); //uppdaterar sidan
   }
+  */
 
 
 
