@@ -59,10 +59,10 @@ class Model extends Component {
     return(
       <div className="App">
         <h1 id="colorTextHeader">Välj modell</h1>
-        <div id = "left" /*onClick={(e) => this.nextPage("Overall",e)*/ style={{cursor:'pointer'}}>
+        <div id = "left" onClick={(e) => this.nextPage("Overall",e)} style={{cursor:'pointer'}}>
           <img src = "ovve.svg" id="ovveBild"></img>
         </div>
-        <div id = "right" /*onClick={(e) => this.nextPage("Hängsel",e)*/ style={{cursor:'pointer'}}>
+        <div id = "right" onClick={(e) => this.nextPage("Hängsel",e)} style={{cursor:'pointer'}}>
           <img src = "hangsel.svg" id="hangselBild"></img>
         </div>
       </div>

@@ -7,7 +7,6 @@ import Stripes from './Stripes'
 import Result from './Result'
 
 
-
 //Variabler till söknigen
 var selectedColor;   //ovvens färg
 var selectedModel;   //ovvens modell
@@ -40,8 +39,8 @@ class App extends Component {
 
     this.setColor = this.setColor.bind(this)
     this.setModel = this.setModel.bind(this)
-    this.setStripes = this.setStripes.bind(this)
-    this.setselectedData = this.setColor.bind(this)
+
+    this.setselectedData = this.setselectedData.bind(this)
   }
 
   startSearch(){
@@ -52,31 +51,24 @@ class App extends Component {
   }
 
   setColor(_color){
+    selectedColor=_color;
   this.setState({currentPage: page.MODEL,
     barWidth: 50});
-  selectedColor=_color;
   }
 
   setModel(_model){
+    selectedModel=_model;
   this.setState({currentPage: page.STRIPES,
   barWidth: 75});
-  selectedModel=_model;
-  }
-
-  setStripes(_Stripes){ //borde inte behövas, läggs in ifall att.
-  this.setState({currentPage: page.RESULT,
-  barWidth: 100});
-  selectedStripes=_Stripes;
   }
 
 
-  /* Behövs nog ej
   setselectedData(_data){
     selectedData = _data;
-    currentPage = page.RESULT;
-    this.forceUpdate(); //uppdaterar sidan
+    this.setState({currentPage: page.RESULT,
+    barWidth: 100});
   }
-  */
+
 
 /*  backButton() {
     if (this.state.currentPage != page.START) {
@@ -107,13 +99,12 @@ class App extends Component {
           return <Model color={selectedColor} setModel={this.setModel}/>
         break;
       case page.STRIPES:
-            return <Stripes color={selectedColor} model={selectedModel} setStripes={this.setStripes}/>
+            return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData}/>
           break;
       case page.RESULT:
             return <Result
-            model={selectedModel}
-            color={selectedColor}
-            stripes={selectedStripes}
+            data ={selectedData}
+
             />
           break;
       default:
