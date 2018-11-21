@@ -5,12 +5,63 @@ body {
 
 }
 
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 12vw;
+#colorTextHeader {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14vw;
   color: white;
-  padding: 20vw;
+  padding: 12vw;
   margin: 0;
+}
+
+#startTextHeader {
+  margin-top: 30vw;
+}
+
+#startTextHeader h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15vw;
+  margin-top: -19vw;
+  color: white;
+}
+
+#backButton {
+  width:20vw;
+  height:20vw;
+  background-color: pink;
+}
+
+#progressBarFront {
+  height: 5vw;
+  margin-top: 1vw;
+  border-radius: 6vw;
+  background-color: white;
+  z-index: 3;
+}
+
+#progressbarBack {
+  width:70vw;
+  height: 5vw;
+  margin: 0 auto;
+  margin-top: 2vw;
+  border-radius: 6vw;
+  background-color: #638382;
+  z-index: 2;
+
+}
+
+#startLogo {
+  width: 80vw;
+  height: 80vw;
+  margin-top:-7vw;
+  filter: drop-shadow(0px 4px 5px grey);
+  transition: ease-in 0.1s;
+
+}
+
+#startLogo:active {
+
+   filter: drop-shadow(0px 0px 0px grey);
+
 }
 
 .errorMessage {
@@ -35,32 +86,29 @@ h1 {
 
 .color-grid-container {
   width: 90vw;
-  height: 83vw;
+  height: 100vw;
   margin: 0 auto;
+  padding-top: 8vw;
   display: grid;
   grid-template-columns: auto auto auto;
   background: white;
-  border-radius: 25px;
+  border-radius: 7vw;
   margin-bottom: 5vw;
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
-  -webkit-box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
-  -moz-box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
-  box-shadow: 0px 21px 31px -16px rgba(0,0,0,0.26);
+  box-shadow: 0px 5px 25px -7px #000000;
 }
 
 .grid-item {
-  width:22vw;
-  height:15vw;
-  margin:3.5vw;
-  margin-top: 5vw;
-  border-radius: 2.5vw;
+  width:24vw;
+  height:17vw;
+  margin: 0 auto;
+  border-radius: 5vw;
   background-color: rgba(100, 100, 100, 0.8);
   font-size: 30px;
   text-align: center;
   /*Skugga färgrutor: opacity 23% y:21px x:0px blur:10px*/
-  -webkit-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
-  -moz-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
-  box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+
+  box-shadow: 0px 5px 20px -7px #000000;
 
 }
 

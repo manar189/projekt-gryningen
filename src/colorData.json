@@ -1,38 +1,50 @@
 [
   {
-    "hex": "#EC6610",
+    "hex": "#F2AD53",
     "color": "Orange"
   },
   {
-    "hex": "#C3B091",
-    "color": "Brun"
-  },
-  {
-    "hex": "#000094",
+    "hex": "#5393F2",
     "color": "Blå"
   },
   {
-    "hex": "#006A4E",
+    "hex": "#74EC7D",
     "color": "Grön"
   },
   {
-    "hex": "#B3B3B3",
-    "color": "Grå"
+    "hex": "#EA5151",
+    "color": "Röd"
   },
   {
-    "hex": "#FFF500",
-    "color": "Gul"
-  },
-  {
-    "hex": "#580272",
+    "hex": "#C055ED",
     "color": "Lila"
   },
   {
-    "hex": ["#FF0000", "#FFF500"],
-    "color": "RödGul"
+    "hex": "#F0E154",
+    "color": "Gul"
+  },
+  {
+    "hex": "#FFFFFF",
+    "color": "Vit"
+  },
+  {
+    "hex": "#A3A3A3",
+    "color": "Grå"
   },
   {
     "hex": "#000000",
     "color": "Svart"
+  },
+  {
+    "hex": "#B09A7B",
+    "color": "Brun"
+  },
+  {
+    "hex": ["#EA5151", "#F0E154"],
+    "color": "RödGul"
+  },
+  {
+    "hex": ["#74EC7D", "#000000"],
+    "color": "GrönSvart"
   }
 ]
