@@ -2,6 +2,66 @@ body {
   text-align: center;
   background-color: #A5DBD9;
 
+
+}
+
+#colorTextHeader {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14vw;
+  color: white;
+  padding: 12vw;
+  margin: 0;
+}
+
+#startTextHeader {
+  margin-top: 30vw;
+}
+
+#startTextHeader h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15vw;
+  margin-top: -19vw;
+  color: white;
+}
+
+#backButton {
+  width:20vw;
+  height:20vw;
+  background-color: pink;
+}
+
+#progressBarFront {
+  height: 5vw;
+  margin-top: 1vw;
+  border-radius: 6vw;
+  background-color: white;
+  z-index: 3;
+}
+
+#progressbarBack {
+  width:70vw;
+  height: 5vw;
+  margin: 0 auto;
+  margin-top: 2vw;
+  border-radius: 6vw;
+  background-color: #638382;
+  z-index: 2;
+
+}
+
+#startLogo {
+  width: 80vw;
+  height: 80vw;
+  margin-top:-7vw;
+  filter: drop-shadow(0px 4px 5px grey);
+  transition: ease-in 0.1s;
+
+}
+
+#startLogo:active {
+
+   filter: drop-shadow(0px 0px 0px grey);
+
 }
 
 #colorTextHeader {
@@ -106,8 +166,11 @@ body {
   font-size: 30px;
   text-align: center;
   /*Skugga färgrutor: opacity 23% y:21px x:0px blur:10px*/
-
   box-shadow: 0px 5px 20px -7px #000000;
+  -webkit-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+  box-shadow: 0px 21px 44px -23px rgba(0,0,0,0.26);
+
 
 }
 

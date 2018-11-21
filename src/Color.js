@@ -23,7 +23,7 @@ class Color extends Component {
 
     return (
       <div className="App">
-        <h1> Välj färg </h1>
+        <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
         {ColorData.map((item, i)=>{
 

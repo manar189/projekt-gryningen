@@ -14,6 +14,8 @@ var selectedModel;   //ovvens modell
 var selectedStripes; //ovvens revär (bör inte behövas användas)
 var selectedData;    //datan som skickas från sista sidan i söknigen
 
+
+
 //variabler fär att hålla koll på sökningen
 const page = {
   START: 0,
@@ -32,7 +34,8 @@ class App extends Component {
     currentPage = page.START; //OBS! Ändra här om du vill se en annan sida från start
     this.startSearch = this.startSearch.bind(this) //Måste vara med om funktionen anropas i render().
     this.state = {
-      currentPage: page.START
+      currentPage: page.START,
+      barWidth: 0 
     }
 
     this.setColor = this.setColor.bind(this)
@@ -43,7 +46,8 @@ class App extends Component {
 
   startSearch(){
     //currentPage = page.COLOR;
-    this.setState({currentPage: page.COLOR});
+    this.setState({currentPage: page.COLOR,
+      barWidth: 20});
     //this.forceUpdate(); //uppdaterar sidan
   }
 
@@ -71,16 +75,26 @@ class App extends Component {
   }
   */
 
+/*  backButton() {
+    if (this.state.currentPage != page.START) {
+    return(
+      <div id="backButton">-> </div>
+      )
+    }
+  }*/
 
 
-  render() {
-    switch (this.state.currentPage) {
-      case page.START:
-          return (
+  renderContent() {
+      switch (this.state.currentPage) {
+        case page.START:
+            return (
           <div>
-            <p> Hi and wellcome to my minecraft server </p>
-            <h1 onClick={this.startSearch}> next page </h1>
-          </div>
+            <div id = "startTextHeader">
+               <h1>Ovve</h1>
+               <h1>Meister</h1>
+            </div>
+            <img src="startLogo.png" id="startLogo" onClick={this.startSearch}></img>
+            </div>
         )
         break;
       case page.COLOR:
@@ -101,8 +115,21 @@ class App extends Component {
           break;
       default:
         return <h1 className="errorMessage"> Error, fel val av värde på selectedStripes</h1>
+        }
     }
-  }
+
+    render() {
+      const barProgress = {width: this.state.barWidth+"%"}; //Gör snyggare med funktion som baseras på sidan ist för width.state
+      return (
+        <div>
+        <div id="progressbarBack"><div id="progressBarFront" style={barProgress}></div></div>
+        {this.renderContent()}
+        </div>
+        )
+    }
+
+  
+
 }
 
 export default App;
