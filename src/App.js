@@ -35,7 +35,7 @@ class App extends Component {
     this.startSearch = this.startSearch.bind(this) //Måste vara med om funktionen anropas i render().
     this.state = {
       currentPage: page.START,
-      barWidth: 0 
+      barWidth: 0
     }
 
     this.setColor = this.setColor.bind(this)
@@ -47,7 +47,7 @@ class App extends Component {
   startSearch(){
     //currentPage = page.COLOR;
     this.setState({currentPage: page.COLOR,
-      barWidth: 20});
+      barWidth: 25});
     //this.forceUpdate(); //uppdaterar sidan
   }
 
@@ -58,12 +58,14 @@ class App extends Component {
   }
 
   setModel(_model){
-  this.setState({currentPage: page.STRIPES});
+  this.setState({currentPage: page.STRIPES,
+  barWidth: 75});
   selectedModel=_model;
   }
 
   setStripes(_Stripes){ //borde inte behövas, läggs in ifall att.
-  this.setState({currentPage: page.RESULT});
+  this.setState({currentPage: page.RESULT,
+  barWidth: 100});
   selectedStripes=_Stripes;
   }
 
@@ -129,7 +131,7 @@ class App extends Component {
         )
     }
 
-  
+
 
 }
 

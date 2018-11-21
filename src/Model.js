@@ -14,27 +14,29 @@ class Model extends Component {
     let hasOvve = false;
     let hasHang = false;
     let skipPage = true;
-    let currentOvve;
+    //let currentOvve;
+    let ovveModel;
 
     function checkModel(ovve)
     {
-      if(ovve.color == chosenColor)
+      if(ovve.color === chosenColor)
       {
-        if(ovve.model == "Overall")
+        if(ovve.model === "Overall")
         {
           hasOvve = true;
         }
-        if(ovve.model == "Hängsel")
+        if(ovve.model === "Hängsel")
         {
           hasHang = true;
         }
+        //currentOvve = ovve;
+        ovveModel = ovve.model;
       }
-      currentOvve = ovve;
     }
 
     OvveData.forEach(checkModel)
     {
-      if(hasOvve == true && hasHang == true)
+      if(hasOvve === true && hasHang === true)
       {
         skipPage = false;
       }
@@ -42,28 +44,25 @@ class Model extends Component {
 
     if(skipPage)
     {
-      this.nextPage(currentOvve);
+      this.nextPage(ovveModel);
     }
   }
 
 
    nextPage(item){
-
     const setModel = this.props.setModel;
-    setModel(item.model);
+    setModel(item);
   }
-
-
 
 
   render() {
     return(
       <div className="App">
         <h1 id="colorTextHeader">Välj modell</h1>
-        <div id = "left">
+        <div id = "left" /*onClick={(e) => this.nextPage("Overall",e)*/ style={{cursor:'pointer'}}>
           <img src = "ovve.svg" id="ovveBild"></img>
         </div>
-        <div id = "right"> 
+        <div id = "right" /*onClick={(e) => this.nextPage("Hängsel",e)*/ style={{cursor:'pointer'}}>
           <img src = "hangsel.svg" id="hangselBild"></img>
         </div>
       </div>
