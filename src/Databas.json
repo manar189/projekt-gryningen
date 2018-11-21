@@ -346,8 +346,8 @@
   {
     "prog": "Sektionen för Slöjd, Hantverk och Formgivning",
     "model": "Hängsel",
-    "color": "Grön",
-    "hexColor": "#92DF00",
+    "color": "GrönSvart",
+    "hexColor": {"1": "#92DF00", "2": "#000000"},
     "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
     "campus": "Linköping"
   },
