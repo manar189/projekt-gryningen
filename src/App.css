@@ -78,7 +78,7 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
   color: white;
 }
 
-#backButton {
+.backButton {
   width:20vw;
   height:20vw;
   background-color: pink;
