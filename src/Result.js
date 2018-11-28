@@ -6,7 +6,7 @@ class Result extends Component {
 
   constructor(props){
     super(props)
-
+    this.backFunc = this.backFunc.bind(this)
   }
 
   renderOvve(){
@@ -36,11 +36,18 @@ class Result extends Component {
     }
   }
 
+  backFunc()
+  {
+    const prevPage = this.props.backFunc
+    prevPage();
+  }
+  
   render() {
     const data = this.props.data; //vår valda ovve
     
     return (
       <div>
+      <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
       <h1 id="resultTextHeader"> Resultat </h1>
 
       <div id="resultTextDiv"><p id="resultTextContent"> {data.prog} </p>

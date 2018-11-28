@@ -107,7 +107,7 @@ div {
   color: white;
 }
 
-#backButton {
+.backButton {
   width:20vw;
   height:20vw;
   background-color: pink;
