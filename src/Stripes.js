@@ -70,7 +70,7 @@ backFunc()
       <div>
       <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
         <h1 id="colorTextHeader"> Välj Revär</h1>
-          <div>
+          <div className="revarContainerOuter">
           <div className="revar-container">
             {Databas.map((item, i) =>{
 

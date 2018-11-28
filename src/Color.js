@@ -15,7 +15,7 @@ class Color extends Component {
 
   myFunc(item){
     const setColor = this.props.setColor
-    setColor(item.color);
+    setColor(item.color, item.hex);
   }
 
   backFunc()

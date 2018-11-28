@@ -66,12 +66,16 @@ class Model extends Component {
     return(
       <div className="App">
         <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-          <h1 id="colorTextHeader">Välj modell</h1>
-        <div id = "left" onClick={(e) => this.nextPage("Overall",false,e)} style={{cursor:'pointer'}}>
-          <img src = "ovve.svg" id="ovveBild"></img>
+        <h1 id="colorTextHeader">Välj modell</h1>
+        <div id = "left" onClick={(e) => this.nextPage("Overall", false, e)} style={{cursor:'pointer'}}>
+          <img src = "images/ovve_bakgrund.png" className ="ovveBakgrund" style={{background:this.props.hex}} ></img>
+          <img src = "images/ovve_skuggor.svg" className ="ovveSkugga" ></img>
+          
         </div>
-        <div id = "right" onClick={(e) => this.nextPage("Hängsel",false,e)} style={{cursor:'pointer'}}>
-          <img src = "hangsel.svg" id="hangselBild"></img>
+        <div id = "right" onClick={(e) => this.nextPage("Hängsel", false, e)} style={{cursor:'pointer'}}>
+          
+          <img src = "images/byxa_bakgrund.png" className ="ovveBakgrund" style={{background:this.props.hex}}></img>
+          <img src = "images/byxa_skuggor.svg" className ="ovveSkugga" ></img>
         </div>
       </div>
       )

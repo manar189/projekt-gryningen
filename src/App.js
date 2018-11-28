@@ -6,6 +6,13 @@ import Model from './Model'
 import Stripes from './Stripes'
 import Result from './Result'
 
+//Variabler till söknigen
+var selectedColor;   //ovvens färg
+var selectedModel;   //ovvens modell
+var selectedStripes; //ovvens revär (bör inte behövas användas)
+var selectedData;    //datan som skickas från sista sidan i söknigen
+var selectedHex; //
+
 //variabler fär att hålla koll på sökningen
 const page = {
   START: 0,
@@ -14,12 +21,6 @@ const page = {
   STRIPES: 3,
   RESULT: 4
 }
-
-//Variabler till söknigen
-var selectedColor;   //ovvens färg
-var selectedModel;   //ovvens modell
-var selectedStripes; //ovvens revär (bör inte behövas användas)
-var selectedData;    //datan som skickas från sista sidan i söknigen
 
 var checkPrevious = [false, false, false, false];   //loggar föregående sida för att kunna backa
 
@@ -50,11 +51,11 @@ class App extends Component {
     //this.forceUpdate(); //uppdaterar sidan
   }
 
-  setColor(_color){
+  setColor(_color, _hex){
     checkPrevious[1] = true;
-
     selectedColor=_color;
-    this.setState({currentPage: page.MODEL,
+    selectedHex=_hex;
+  this.setState({currentPage: page.MODEL,
     barWidth: 50});
   }
 
@@ -139,7 +140,7 @@ class App extends Component {
           return <Color setColor={this.setColor} backFunc={this.prevPage}/>
         break;
       case page.MODEL:
-          return <Model color={selectedColor} setModel={this.setModel} backFunc={this.prevPage}/>
+          return <Model color={selectedColor} hex={selectedHex} setModel={this.setModel} backFunc={this.prevPage}/>
         break;
       case page.STRIPES:
             return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData} backFunc={this.prevPage}/>
