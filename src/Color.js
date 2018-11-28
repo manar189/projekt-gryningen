@@ -9,27 +9,21 @@ class Color extends Component {
   constructor(props){
     super(props)
     this.myFunc = this.myFunc.bind(this) //Måste vara med om funktionen anropas i render().
-    this.backFunc = this.backFunc.bind(this)
+
   }
 
 
   myFunc(item){
     const setColor = this.props.setColor
-    setColor(item.color);
+    setColor(item.color, item.hex);
   }
 
-  backFunc()
-  {
-    const prevPage = this.props.backFunc
-    prevPage();
-  }
 
   render() {
 
     return (
       <div className="App">
-        <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-          <h1 id="colorTextHeader"> Välj färg </h1>
+        <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
         {ColorData.map((item, i) =>{
 
