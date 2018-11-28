@@ -8,7 +8,6 @@ class Stripes extends Component {
   constructor(props){
     super(props)
     this.nextPage = this.nextPage.bind(this) //Måste vara med om funktionen anropas i render().
-    this.backFunc = this.backFunc.bind(this)
   }
 
 
@@ -34,15 +33,9 @@ class Stripes extends Component {
 
 }
 
-nextPage(item, isSkipped){
+nextPage(item){
  const setData = this.props.setData;
- setData(item, isSkipped);
-}
-
-backFunc()
-{
-  const prevPage = this.props.backFunc
-  prevPage();
+ setData(item);
 }
 
 //skippar sidan om vi inte behöver kolla revär.
@@ -54,7 +47,7 @@ backFunc()
 
       Databas.map((item,i) => {
         if(item.model == model && item.color == color){
-          this.nextPage(item, true)
+          this.nextPage(item)
         }
       })
     }
@@ -68,21 +61,18 @@ backFunc()
     const model = this.props.model;
     return (
       <div>
-      <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
         <h1 id="colorTextHeader"> Välj Revär</h1>
-          <div>
+          <div className="revarContainerOuter">
           <div className="revar-container">
             {Databas.map((item, i) =>{
 
               if(item.model == model && item.color == color){
                 return (
-
                   <div className="revar">
-                  <img className="texture" src="texture.jpg" onClick={(e) => this.nextPage(item,false,e)}/>
+                  <img className="texture" src="texture.jpg" onClick={(e) => this.nextPage(item,e)}/>
                     <div className="top" style={{backgroundColor: item.revar[1] }}></div>
                     <div className="middle" style={{backgroundColor: item.revar[2] }}></div>
                     <div className="bottom" style={{backgroundColor: item.revar[3] }}></div>
-
                   </div>
                   
                 

@@ -10,7 +10,6 @@ class Model extends Component {
 
     const chosenColor = this.props.color;
     this.nextPage = this.nextPage.bind(this) //Måste vara med om funktionen anropas i render().
-    this.backFunc = this.backFunc.bind(this)
 
     let hasOvve = false;
     let hasHang = false;
@@ -30,7 +29,7 @@ class Model extends Component {
         {
           hasHang = true;
         }
-
+        //currentOvve = ovve;
         ovveModel = ovve.model;
       }
     }
@@ -45,33 +44,30 @@ class Model extends Component {
 
     if(skipPage)
     {
-      this.nextPage(ovveModel, true);
+      this.nextPage(ovveModel);
     }
   }
 
 
-   nextPage(item, skipPage){
-
+   nextPage(item){
     const setModel = this.props.setModel;
-    setModel(item, skipPage);
+    setModel(item);
   }
 
-  backFunc()
-  {
-    const prevPage = this.props.backFunc
-    prevPage();
-  }
 
   render() {
     return(
       <div className="App">
-        <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-          <h1 id="colorTextHeader">Välj modell</h1>
-        <div id = "left" onClick={(e) => this.nextPage("Overall",false,e)} style={{cursor:'pointer'}}>
-          <img src = "ovve.svg" id="ovveBild"></img>
+        <h1 id="colorTextHeader">Välj modell</h1>
+        <div id = "left" onClick={(e) => this.nextPage("Overall",e)} style={{cursor:'pointer'}}>
+          <img src = "images/ovve_bakgrund.png" className ="ovveBakgrund" style={{background:this.props.hex}} ></img>
+          <img src = "images/ovve_skuggor.svg" className ="ovveSkugga" ></img>
+          
         </div>
-        <div id = "right" onClick={(e) => this.nextPage("Hängsel",false,e)} style={{cursor:'pointer'}}>
-          <img src = "hangsel.svg" id="hangselBild"></img>
+        <div id = "right" onClick={(e) => this.nextPage("Hängsel",e)} style={{cursor:'pointer'}}>
+          
+          <img src = "images/byxa_bakgrund.png" className ="ovveBakgrund" style={{background:this.props.hex}}></img>
+          <img src = "images/byxa_skuggor.svg" className ="ovveSkugga" ></img>
         </div>
       </div>
       )

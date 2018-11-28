@@ -49,13 +49,42 @@ div {
   margin-left: 8vw;
 }
 
-#ovveBild {
-filter: brightness(0.7) sepia(0.5) saturate(700%);
+.ovveRevarOver {
+  z-index: 4;
+  opacity: 0.6;
+  position: absolute;
+  height: 60vw;
+  margin-left: 3vw;
+  margin-top: 4vw;
+  stroke: solid red 1vw;
 }
 
-#hangselBild {
+.ovveRevarUnder {
+  z-index: 5;
+  opacity: 0.8;
+  position: absolute;
+  height: 60vw;
+  margin-left: 3vw;
+  margin-top: 4vw;
+  fill: red;
+}
 
-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate(500%) contrast(0.8);
+.ovveBakgrund{
+  z-index: 2;
+  position: absolute;
+  height: 60vw;
+  background-color: blue;
+  margin-left: 3vw;
+  margin-top: 4vw;
+}
+
+.ovveSkugga{
+  z-index: 3;
+  opacity: 0.9;
+  position: absolute;
+  height: 60vw;
+  margin-left: 3vw;
+  margin-top: 4vw;
 }
 
 
@@ -78,7 +107,7 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
   color: white;
 }
 
-.backButton {
+#backButton {
   width:20vw;
   height:20vw;
   background-color: pink;
@@ -229,6 +258,12 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
 
 /*       css for Stripes        */
 
+.revarContainerOuter {
+  flex-grow: 1;
+  display:flex;
+  flex-direction: column;
+}
+
 .revar-container {
   width: 90vw;
   height: 100vw;
@@ -239,6 +274,10 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
   margin-bottom: 5vw;
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
+  flex-grow: 1;
+  overflow: auto;
+
+
 
 }
 
