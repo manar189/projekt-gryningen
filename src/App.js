@@ -6,15 +6,6 @@ import Model from './Model'
 import Stripes from './Stripes'
 import Result from './Result'
 
-
-//Variabler till söknigen
-var selectedColor;   //ovvens färg
-var selectedModel;   //ovvens modell
-var selectedStripes; //ovvens revär (bör inte behövas användas)
-var selectedData;    //datan som skickas från sista sidan i söknigen
-
-
-
 //variabler fär att hålla koll på sökningen
 const page = {
   START: 0,
@@ -23,14 +14,19 @@ const page = {
   STRIPES: 3,
   RESULT: 4
 }
-var currentPage; //sidan som är aktiv
 
+//Variabler till söknigen
+var selectedColor;   //ovvens färg
+var selectedModel;   //ovvens modell
+var selectedStripes; //ovvens revär (bör inte behövas användas)
+var selectedData;    //datan som skickas från sista sidan i söknigen
+
+var checkPrevious = [false, false, false, false];   //loggar föregående sida för att kunna backa
 
 class App extends Component {
 
   constructor(props){
     super(props)
-    currentPage = page.START; //OBS! Ändra här om du vill se en annan sida från start
     this.startSearch = this.startSearch.bind(this) //Måste vara med om funktionen anropas i render().
     this.state = {
       currentPage: page.START,
@@ -40,44 +36,91 @@ class App extends Component {
     this.setColor = this.setColor.bind(this)
     this.setModel = this.setModel.bind(this)
 
+    this.prevPage = this.prevPage.bind(this)
+
     this.setselectedData = this.setselectedData.bind(this)
   }
 
   startSearch(){
-    //currentPage = page.COLOR;
+    checkPrevious[0] = true;
+    console.log(checkPrevious);
+
     this.setState({currentPage: page.COLOR,
-      barWidth: 25});
+    barWidth: 25});
     //this.forceUpdate(); //uppdaterar sidan
   }
 
   setColor(_color){
+    checkPrevious[1] = true;
+
     selectedColor=_color;
-  this.setState({currentPage: page.MODEL,
+    this.setState({currentPage: page.MODEL,
     barWidth: 50});
   }
 
-  setModel(_model){
+  setModel(_model, isSkipped){
     selectedModel=_model;
-  this.setState({currentPage: page.STRIPES,
-  barWidth: 75});
+
+    if(!isSkipped)
+    {
+      checkPrevious[2] = true;
+    }
+
+    this.setState({currentPage: page.STRIPES,
+    barWidth: 75});
   }
 
-
-  setselectedData(_data){
+  setselectedData(_data, isSkipped){
     selectedData = _data;
+
+    if(!isSkipped)
+    {
+      checkPrevious[3] = true;
+    }
+
     this.setState({currentPage: page.RESULT,
     barWidth: 100});
   }
 
+  prevPage()
+  {
+    let changeBar;
+    let previousPage;
 
-/*  backButton() {
-    if (this.state.currentPage != page.START) {
-    return(
-      <div id="backButton">-> </div>
-      )
+    for(let i = 3; i >= 0; --i)
+    {
+      if(checkPrevious[i])
+      {
+        previousPage = i;
+        checkPrevious[i] = false;
+
+        break;
+      }
     }
-  }*/
 
+    switch (previousPage) {
+      case page.START:
+        changeBar = 0;
+        break;
+      case page.COLOR:
+        changeBar = 25;
+        break;
+      case page.MODEL:
+        changeBar = 50;
+        break;
+      case page.STRIPES:
+        changeBar = 75;
+        break;
+      case page.RESULT:
+        changeBar = 100;
+        break;
+      default: break;
+    }
+
+    this.setState({currentPage: previousPage,
+    barWidth: changeBar});
+
+  }
 
   renderContent() {
       switch (this.state.currentPage) {
@@ -93,17 +136,17 @@ class App extends Component {
         )
         break;
       case page.COLOR:
-          return <Color setColor={this.setColor}/>
+          return <Color setColor={this.setColor} backFunc={this.prevPage}/>
         break;
       case page.MODEL:
-          return <Model color={selectedColor} setModel={this.setModel}/>
+          return <Model color={selectedColor} setModel={this.setModel} backFunc={this.prevPage}/>
         break;
       case page.STRIPES:
-            return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData}/>
+            return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData} backFunc={this.prevPage}/>
           break;
       case page.RESULT:
             return <Result
-            data ={selectedData}
+            data ={selectedData} backFunc={this.prevPage}
 
             />
           break;
