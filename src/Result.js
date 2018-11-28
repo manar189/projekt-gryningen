@@ -21,10 +21,17 @@ class Result extends Component {
 
     return (
       <div>
-      <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-        <h1> Resulat </h1>
 
-        <h1> {data.prog} </h1>
+      <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
+
+        <h1 id="resultTextHeader"> Resultat </h1>
+
+
+        <div id="resultTextDiv"><p id="resultTextContent"> {data.prog} </p>
+        </div>
+        <div id = "resultOvveDiv">
+          <img src = "hangsel.svg" id="hangselBild"></img>
+        </div>
       </div>
     );
   }

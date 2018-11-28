@@ -69,23 +69,29 @@ backFunc()
     return (
       <div>
       <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-        <h1> inside stripes </h1>
+        <h1 id="colorTextHeader"> Välj Revär</h1>
           <div>
+          <div className="revar-container">
             {Databas.map((item, i) =>{
 
               if(item.model == model && item.color == color){
                 return (
-                  <div style={{padding: '5px'}}>
 
-                    <div onClick={(e) => this.nextPage(item, false, e)}  style={{backgroundColor: item.revar[1] }}>{item.revar[1]}</div>
-                    <div onClick={(e) => this.nextPage(item, false, e)}  style={{backgroundColor: item.revar[2] }}>{item.revar[1]}</div>
-                    <div onClick={(e) => this.nextPage(item, false, e)}  style={{backgroundColor: item.revar[3] }}>{item.revar[1]}</div>
+                  <div className="revar">
+                  <img className="texture" src="texture.jpg" onClick={(e) => this.nextPage(item,false,e)}/>
+                    <div className="top" style={{backgroundColor: item.revar[1] }}></div>
+                    <div className="middle" style={{backgroundColor: item.revar[2] }}></div>
+                    <div className="bottom" style={{backgroundColor: item.revar[3] }}></div>
 
                   </div>
+                  
+                
                 )
               }
 
+
             })}
+            </div>
           </div>
       </div>
     );

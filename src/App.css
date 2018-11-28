@@ -1,8 +1,23 @@
 body {
-  text-align: center;
   background-color: #A5DBD9;
+}
 
+h1 {
+  text-align: center;
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.1s;
 
+}
+
+img {
+  text-align: center;
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.1s;
+}
+
+div {
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.1s;
 }
 
 
@@ -93,6 +108,7 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
   width: 80vw;
   height: 80vw;
   margin-top:-7vw;
+  margin-left: 10vw;
   filter: drop-shadow(0px 4px 5px grey);
   transition: ease-in 0.1s;
 
@@ -154,7 +170,6 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
   margin-top:-7vw;
   filter: drop-shadow(0px 4px 5px grey);
   transition: ease-in 0.1s;
-
 }
 
 #startLogo:active {
@@ -214,4 +229,102 @@ filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-180deg) saturate
 
 /*       css for Stripes        */
 
+.revar-container {
+  width: 90vw;
+  height: 100vw;
+  margin: -10vw auto;
+  padding-top: 8vw;
+  background: white;
+  border-radius: 7vw;
+  margin-bottom: 5vw;
+  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
+  box-shadow: 0px 5px 25px -7px #000000;
+
+}
+
+.revar {
+  margin-bottom: 2vw;
+  margin-left: 5vw;
+  height: 15vw;
+  width: 89%;
+  border-radius: 1vw;
+
+}
+
+.texture {
+  position: absolute;
+  opacity: 0.2;
+  margin-bottom: 2vw;
+  height: 15vw;
+  width: 80vw;
+  border-radius: 1vw;
+}
+
+.top {
+  height: 25% ;
+  border-top-right-radius: 1vw;
+  border-top-left-radius: 1vw;
+}
+
+.middle {
+  height: 50% ;
+}
+
+.bottom {
+  height: 25% ;
+  border-bottom-right-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+
 /*       css for Result        */
+
+
+#resultTextHeader {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14vw;
+  color: white;
+  padding: 12vw;
+  margin: 0;
+}
+
+#resultTextContent {
+  width: 46vw;
+  height: 80vw;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 4vw;
+  color: black;
+  padding: 2vw;
+  margin: 0;
+}
+
+#resultTextDiv {
+ width: 46vw;
+  height: 80vw;
+  margin: 0 auto;
+  padding-top: 8vw;
+  background: white;
+  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
+  box-shadow: 0px 5px 25px -7px #000000;
+  float: left;
+  border-top-right-radius: 6vw;
+  border-bottom-right-radius: 6vw;
+}
+
+#resultOvveDiv {
+ width: 46vw;
+  height: 80vw;
+  margin: 0 auto;
+  padding-top: 8vw;
+  background: white;
+  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
+  box-shadow: 0px 5px 25px -7px #000000;
+  float: left;
+  border-top-left-radius: 6vw;
+  border-bottom-left-radius: 6vw;
+  margin-left: 8vw;
+}
+
+
+/* css för snazzidazzi */
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
