@@ -16,9 +16,13 @@ class Result extends Component {
 
     return (
       <div>
-        <h1> Resulat </h1>
+        <h1 id="resultTextHeader"> Resultat </h1>
 
-        <h1> {data.prog} </h1>
+        <div id="resultTextDiv"><p id="resultTextContent"> {data.prog} </p>
+        </div>
+        <div id = "resultOvveDiv">
+          <img src = "hangsel.svg" id="hangselBild"></img>
+        </div>
       </div>
     );
   }

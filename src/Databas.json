@@ -80,6 +80,14 @@
     "campus": "Linköping"
   },
   {
+    "prog": "Civilingenjör i teknisk biologi",
+    "model": "Overall",
+    "color": "Grön",
+    "hexColor": "#007A01",
+    "revar": {"1": "#FFFFFF", "2": "#FFF500", "3": "#FFFFFF"},
+    "campus": "Linköping"
+  },
+  {
     "prog": "Civilingenjör i teknisk eller kemisk biologi",
     "model": "Overall",
     "color": "Grön",
@@ -160,7 +168,7 @@
     "campus": "Linköping"
   },
   {
-    "prog": "Manlig civilingenjör i energi, miljö, management",
+    "prog": "Manlig civilingenjör i eniergi, miljö, management",
     "model": "Overall",
     "color": "Röd",
     "hexColor": "#FF0000",
@@ -168,7 +176,7 @@
     "campus": "Linköping"
   },
   {
-    "prog": "Kvinnlig civilingenjör i energi, miljö, management",
+    "prog": "Kvinnlig civilingenjör i eniergi, miljö, management",
     "model": "Overall",
     "color": "RödGul",
     "hexColor": {"1": "#FF0000", "2": "#FFF500"},
@@ -189,6 +197,14 @@
     "color": "Röd",
     "hexColor": "#800000",
     "revar": {"1": "#17962C", "2": "#17962C", "3": "#17962C"},
+    "campus": "Linköping"
+  },
+   {
+    "prog": "Kemi (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
     "campus": "Linköping"
   },
    {
@@ -344,12 +360,12 @@
     "campus": "Linköping"
   },
    {
-    "prog": "Lärarprogrammet (röd) eller Kemi (vinröd)",
+    "prog": "Lärarprogrammet",
     "model": "Overall",
     "color": "Röd",
     "hexColor": "#FF0000",
     "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
-    "campus": "Norrköping och Linköping"
+    "campus": "Linköping och Norrköping"
   },
   {
     "prog": "Arbetsterapeut",
