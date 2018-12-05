@@ -32,7 +32,7 @@
     "campus": "Norrköping"
   },
   {
-    "prog": "Högskoleingenjör i byggnadsteknik",
+    "prog": "Högskoleingenjör byggteknik",
     "model": "Overall",
     "color": "Grå",
     "hexColor": "#B3B3B3",
@@ -200,6 +200,14 @@
     "campus": "Linköping"
   },
    {
+    "prog": "Kemi (Kandidat och Masterprogram)",
+    "model": "Overall",
+    "color": "Röd",
+    "hexColor": "#800000",
+    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "campus": "Linköping"
+  },
+   {
     "prog": "Fysik (Kandidat och Masterprogram)",
     "model": "Overall",
     "color": "Röd",
@@ -352,12 +360,12 @@
     "campus": "Linköping"
   },
    {
-    "prog": "Lärarprogrammet (röd) eller Kemi (vinröd)",
+    "prog": "Lärarprogrammet",
     "model": "Overall",
     "color": "Röd",
     "hexColor": "#FF0000",
     "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
-    "campus": "Linköping eller/och Norrköping"
+    "campus": "Linköping och Norrköping"
   },
   {
     "prog": "Arbetsterapeut",
