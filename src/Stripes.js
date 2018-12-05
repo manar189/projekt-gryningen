@@ -20,7 +20,7 @@ class Stripes extends Component {
    let cc = 0;
    Databas.map((item,i) => {
 
-     if(item.model == model && item.color == color){
+     if(item.model === model && item.color === color){
        cc++;
      }
 
@@ -50,10 +50,10 @@ backFunc()
     const color = this.props.color;
     const model = this.props.model;
 
-    if(this.checkStripes() == false){
+    if(this.checkStripes() === false){
 
       Databas.map((item,i) => {
-        if(item.model == model && item.color == color){
+        if(item.model === model && item.color === color){
           this.nextPage(item, true)
         }
       })
@@ -74,11 +74,11 @@ backFunc()
           <div className="revar-container">
             {Databas.map((item, i) =>{
 
-              if(item.model == model && item.color == color){
+              if(item.model === model && item.color === color){
                 return (
 
                   <div className="revar">
-                  <img className="texture" src="texture.jpg" onClick={(e) => this.nextPage(item,false,e)}/>
+                  <img className="texture" src="texture.jpg" alt="Kunde inte ladda bilden" onClick={(e) => this.nextPage(item,false,e)}/>
                     <div className="top" style={{backgroundColor: item.revar[1] }}></div>
                     <div className="middle" style={{backgroundColor: item.revar[2] }}></div>
                     <div className="bottom" style={{backgroundColor: item.revar[3] }}></div>

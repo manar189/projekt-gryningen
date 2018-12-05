@@ -14,25 +14,26 @@ class Result extends Component {
     const data = this.props.data;
     switch(data.model){
       case "Overall":
-      return(
-        <div>
-          <img src = "images/ovve_revar_over.svg" className="ovveRevarOver"></img>
-          <img src = "images/ovve_revar_under.svg" className="ovveRevarUnder"></img>
-          <img src = "images/ovve_bakgrund.png" className ="ovveBakgrund" style={{background:data.hexColor}}></img>
-          <img src = "images/ovve_skuggor.svg" className ="ovveSkugga" ></img>
-        </div>
-        )
-      break;
+        return(
+          <div>
+            <img src = "images/ovve_revar_over.svg" alt="Kunde inte ladda bilden" className="ovveRevarOver"></img>
+            <img src = "images/ovve_revar_under.svg" alt="Kunde inte ladda bilden" className="ovveRevarUnder"></img>
+            <img src = "images/ovve_bakgrund.png" alt="Kunde inte ladda bilden" className ="ovveBakgrund" style={{background:data.hexColor}}></img>
+            <img src = "images/ovve_skuggor.svg" alt="Kunde inte ladda bilden" className ="ovveSkugga" ></img>
+          </div>
+          )
+        break;
       case "Hängsel":
-      return(
-        <div>
-          <img src = "images/byxa_revar_over.svg" className="ovveRevarOver"></img>
-          <img src = "images/byxa_revar_under.svg" className="ovveRevarUnder"></img>
-          <img src = "images/byxa_bakgrund.png" className ="ovveBakgrund" style={{background:data.hexColor}}></img>
-          <img src = "images/byxa_skuggor.svg" className ="ovveSkugga" ></img>
-        </div>
-        )
-      break;
+        return(
+          <div>
+            <img src = "images/byxa_revar_over.svg" alt="Kunde inte ladda bilden" className="ovveRevarOver"></img>
+            <img src = "images/byxa_revar_under.svg" alt="Kunde inte ladda bilden" className="ovveRevarUnder"></img>
+            <img src = "images/byxa_bakgrund.png" alt="Kunde inte ladda bilden" className ="ovveBakgrund" style={{background:data.hexColor}}></img>
+            <img src = "images/byxa_skuggor.svg" alt="Kunde inte ladda bilden" className ="ovveSkugga" ></img>
+          </div>
+          )
+        break;
+      default: break;
 
     }
   }

@@ -141,7 +141,7 @@ class App extends Component {
                <h1>Ovve</h1>
                <h1>Meister</h1>
             </div>
-            <img src="startLogo.png" id="startLogo" onClick={this.startSearch}></img>
+            <img src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
             <div id = "newSearchButton" onClick={this.setAbout}></div>
           </div>
         )

@@ -33,7 +33,7 @@ class Color extends Component {
       <div className="color-grid-container">
         {ColorData.map((item, i) =>{
 
-          if(item.hex.length == 2){
+          if(item.hex.length === 2){
                     return <div className="grid-item" key={i} onClick={(e) => this.myFunc(item,e)}
                     style={{ background: 'linear-gradient(to right,'+ item.hex[0] +' 50%, '+ item.hex[1] +' 50%' , cursor:'pointer'}}>
 
