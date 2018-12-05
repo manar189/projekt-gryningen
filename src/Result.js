@@ -22,7 +22,6 @@ class Result extends Component {
           <img src = "images/ovve_skuggor.svg" alt="Kunde inte ladda bilden" className ="ovveSkugga" ></img>
         </div>
         )
-      break;
       case "Hängsel":
       return(
         <div>
@@ -32,7 +31,6 @@ class Result extends Component {
           <img src = "images/byxa_skuggor.svg" alt="Kunde inte ladda bilden" className ="ovveSkugga" ></img>
         </div>
         )
-      break;
       default: break;
 
     }

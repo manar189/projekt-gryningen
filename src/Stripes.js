@@ -23,7 +23,7 @@ class Stripes extends Component {
      if(item.model === model && item.color === color){
        cc++;
      }
-
+     return cc;
    })
    if(cc >= 2){
       return true;

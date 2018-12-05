@@ -36,13 +36,11 @@ class Model extends Component {
     }
 
     OvveData.forEach(checkModel)
-    {
-      if(hasOvve === true && hasHang === true)
-      {
-        skipPage = false;
-      }
-    }
 
+    if(hasOvve === true && hasHang === true)
+    {
+      skipPage = false;
+    }
     if(skipPage)
     {
       this.nextPage(ovveModel, true);

@@ -10,7 +10,6 @@ import About from './About'
 //Variabler till söknigen
 var selectedColor;   //ovvens färg
 var selectedModel;   //ovvens modell
-var selectedStripes; //ovvens revär (bör inte behövas användas)
 var selectedData;    //datan som skickas från sista sidan i söknigen
 var selectedHex; //
 
@@ -143,20 +142,16 @@ class App extends Component {
             <img src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
             <div id = "newSearchButton" onClick={this.setAbout}></div>
             </div>
-        )
-        break;
+          )
+
       case page.COLOR:
           return <Color setColor={this.setColor} backFunc={this.prevPage}/>
-        break;
       case page.MODEL:
           return <Model color={selectedColor} hex={selectedHex} setModel={this.setModel} backFunc={this.prevPage}/>
-        break;
       case page.STRIPES:
             return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData} backFunc={this.prevPage}/>
-          break;
       case page.RESULT:
           return <Result data ={selectedData} backFunc={this.prevPage} startSearch={this.startSearch}/>
-        break;
       case page.ABOUT:
             return <About backFunc={this.prevPage}/>
       default:
@@ -164,11 +159,18 @@ class App extends Component {
       }
     }
 
+    renderProgressbar(){
+      const barProgress = {width: this.state.barWidth+"%"};
+      if(this.state.currentPage != page.ABOUT)
+      {
+        return <div id="progressbarBack"><div id="progressBarFront" style={barProgress}></div></div>
+      }
+    }
+
     render() {
-      const barProgress = {width: this.state.barWidth+"%"}; //Gör snyggare med funktion som baseras på sidan ist för width.state
       return (
         <div>
-        <div id="progressbarBack"><div id="progressBarFront" style={barProgress}></div></div>
+        {this.renderProgressbar()}
         {this.renderContent()}
         </div>
         )
