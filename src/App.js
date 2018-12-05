@@ -29,26 +29,25 @@ class App extends Component {
   constructor(props){
     super(props)
     this.startSearch = this.startSearch.bind(this) //Måste vara med om funktionen anropas i render().
+    this.setColor = this.setColor.bind(this)
+    this.setModel = this.setModel.bind(this)
+    this.prevPage = this.prevPage.bind(this)
+    this.setselectedData = this.setselectedData.bind(this)
+
     this.state = {
       currentPage: page.START,
       barWidth: 0
     }
-
-    this.setColor = this.setColor.bind(this)
-    this.setModel = this.setModel.bind(this)
-
-    this.prevPage = this.prevPage.bind(this)
-
-    this.setselectedData = this.setselectedData.bind(this)
   }
 
   startSearch(){
     checkPrevious[0] = true;
-    console.log(checkPrevious);
+    checkPrevious[1] = false;
+    checkPrevious[2] = false;
+    checkPrevious[3] = false;
 
     this.setState({currentPage: page.COLOR,
     barWidth: 25});
-    //this.forceUpdate(); //uppdaterar sidan
   }
 
   setColor(_color, _hex){
@@ -147,9 +146,7 @@ class App extends Component {
           break;
       case page.RESULT:
             return <Result
-            data ={selectedData} backFunc={this.prevPage}
-
-            />
+            data ={selectedData} backFunc={this.prevPage} startSearch={this.startSearch}/>
           break;
       default:
         return <h1 className="errorMessage"> Error, fel val av värde på selectedStripes</h1>
