@@ -7,10 +7,11 @@ class Result extends Component {
   constructor(props){
     super(props)
     this.backFunc = this.backFunc.bind(this)
+    this.newSearch = this.newSearch.bind(this)
   }
 
   renderOvve(){
-    const data = this.props.data; 
+    const data = this.props.data;
     switch(data.model){
       case "Overall":
       return(
@@ -41,24 +42,27 @@ class Result extends Component {
     const prevPage = this.props.backFunc
     prevPage();
   }
-  
+
+  newSearch()
+  {
+    const newSearch = this.props.startSearch
+    newSearch();
+  }
+
   render() {
     const data = this.props.data; //vår valda ovve
-    
+
     return (
       <div>
-      <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-      <h1 id="resultTextHeader"> Resultat </h1>
-
-      <div id="resultTextDiv"><p id="resultTextContent"> {data.prog} </p>
+        <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
+        <h1 id="resultTextHeader"> Resultat </h1>
+        <div id="resultTextDiv"><p id="resultTextContent"> {data.prog} </p></div>
+        <div id = "resultOvveDiv">
+          {this.renderOvve()}
+        </div>
+        <div id="newSearchButton" onClick={(n) => this.newSearch(n)}><p>Ny sökning</p></div>
       </div>
-      <div id = "resultOvveDiv">
-      
-      {this.renderOvve()}
-      
-      </div>
-      </div>
-      );
+    );
   }
 }
 
