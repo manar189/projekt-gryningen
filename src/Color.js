@@ -28,12 +28,12 @@ class Color extends Component {
 
     return (
       <div className="App">
-        <img src ="images/arrow.svg" className="backButton" onClick={(b) => this.backFunc(b)}></img>
+        <img src ="images/arrow.svg" alt="Kunde inte ladda bilden" className="backButton" onClick={(b) => this.backFunc(b)}></img>
           <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
         {ColorData.map((item, i) =>{
 
-          if(item.hex.length == 2){
+          if(item.hex.length === 2){
                     return <div className="grid-item" key={i} onClick={(e) => this.myFunc(item,e)}
                     style={{ background: 'linear-gradient(to right,'+ item.hex[0] +' 50%, '+ item.hex[1] +' 50%' , cursor:'pointer'}}>
 

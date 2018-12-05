@@ -5,6 +5,7 @@ import Color from './Color'
 import Model from './Model'
 import Stripes from './Stripes'
 import Result from './Result'
+import About from './About'
 
 //Variabler till söknigen
 var selectedColor;   //ovvens färg
@@ -19,7 +20,8 @@ const page = {
   COLOR: 1,
   MODEL: 2,
   STRIPES: 3,
-  RESULT: 4
+  RESULT: 4,
+  ABOUT: 5
 }
 
 var checkPrevious = [false, false, false, false];   //loggar föregående sida för att kunna backa
@@ -36,19 +38,19 @@ class App extends Component {
 
     this.setColor = this.setColor.bind(this)
     this.setModel = this.setModel.bind(this)
-
     this.prevPage = this.prevPage.bind(this)
-
     this.setselectedData = this.setselectedData.bind(this)
+    this.setAbout = this.setAbout.bind(this)
   }
 
   startSearch(){
     checkPrevious[0] = true;
-    console.log(checkPrevious);
+    checkPrevious[1] = false;
+    checkPrevious[2] = false;
+    checkPrevious[3] = false;
 
     this.setState({currentPage: page.COLOR,
     barWidth: 25});
-    //this.forceUpdate(); //uppdaterar sidan
   }
 
   setColor(_color, _hex){
@@ -81,6 +83,12 @@ class App extends Component {
 
     this.setState({currentPage: page.RESULT,
     barWidth: 100});
+  }
+
+  setAbout() {
+    checkPrevious[0] = true;
+     this.setState({currentPage: page.ABOUT,
+    barWidth: 0});
   }
 
   prevPage()
@@ -132,7 +140,8 @@ class App extends Component {
                <h1>Ovve</h1>
                <h1>Meister</h1>
             </div>
-            <img src="startLogo.png" id="startLogo" onClick={this.startSearch}></img>
+            <img src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
+            <div id = "newSearchButton" onClick={this.setAbout}></div>
             </div>
         )
         break;
@@ -146,14 +155,13 @@ class App extends Component {
             return <Stripes color={selectedColor} model={selectedModel} setData={this.setselectedData} backFunc={this.prevPage}/>
           break;
       case page.RESULT:
-            return <Result
-            data ={selectedData} backFunc={this.prevPage}
-
-            />
-          break;
+          return <Result data ={selectedData} backFunc={this.prevPage} startSearch={this.startSearch}/>
+        break;
+      case page.ABOUT:
+            return <About backFunc={this.prevPage}/>
       default:
-        return <h1 className="errorMessage"> Error, fel val av värde på selectedStripes</h1>
-        }
+        return <h1 className="errorMessage"> Error, går in i default på switchen</h1>
+      }
     }
 
     render() {
