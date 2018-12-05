@@ -18,7 +18,7 @@ class About extends Component {
 
     return (
       <div>
-        <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
+          <img src ="images/arrow.svg" alt="Kunde inte ladda bilden" className="backButton" onClick={(b) => this.backFunc(b)}></img>
           <h1 id="colorTextHeader"> About </h1>
       </div>
     );
