@@ -357,6 +357,15 @@ div {
   margin: 0;
 }
 
+#resultTextCampus {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 5vw;
+  color: black;
+  padding: 2vw;
+  margin: 0;
+}
+
 #resultTextDiv {
  width: 46vw;
   height: 80vw;
