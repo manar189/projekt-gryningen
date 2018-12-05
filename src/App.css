@@ -108,9 +108,11 @@ div {
 }
 
 .backButton {
-  width:20vw;
-  height:20vw;
-  background-color: pink;
+  width:30vw;
+  height:30vw;
+  margin-bottom: -15vw;
+  transform: rotate(180deg);
+  filter: invert(100%);
 }
 
 #progressBarFront {
@@ -172,19 +174,6 @@ div {
   width:20vw;
   height:20vw;
   background-color: pink;
-}
-
-#newSearchButton {
-  position: absolute;
-  bottom: 0vw;
-  right: 25vw;
-  width: 50vw;
-  height: 12vw;
-  margin: 0 auto;
-  background: white;
-  box-shadow: 0px 5px 25px -7px #000000;
-  border-top-right-radius: 25vw;
-  border-top-left-radius: 25vw;
 }
 
 #progressBarFront {
@@ -340,10 +329,9 @@ div {
 }
 
 #resultTextContent {
-  width: 46vw;
-  height: 80vw;
+  text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 4vw;
+  font-size: 5vw;
   color: black;
   padding: 2vw;
   margin: 0;
@@ -363,7 +351,7 @@ div {
 }
 
 #resultOvveDiv {
- width: 46vw;
+ width: 70vw;
   height: 80vw;
   margin: 0 auto;
   padding-top: 8vw;
@@ -371,9 +359,8 @@ div {
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
   float: left;
-  border-top-left-radius: 6vw;
-  border-bottom-left-radius: 6vw;
-  margin-left: 8vw;
+  border-radius: 6vw;
+  margin-left: 15vw;
 }
 
 
