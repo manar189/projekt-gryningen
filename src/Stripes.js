@@ -69,7 +69,7 @@ backFunc()
     return (
       <div>
       <div className="backButton" onClick={(b) => this.backFunc(b)}></div>
-        <h1 id="colorTextHeader"> Välj Revär</h1>
+        <h1 id="colorTextHeader"> Välj revär</h1>
           <div className="revarContainerOuter">
           <div className="revar-container">
             {Databas.map((item, i) =>{
@@ -84,8 +84,8 @@ backFunc()
                     <div className="bottom" style={{backgroundColor: item.revar[3] }}></div>
 
                   </div>
-                  
-                
+
+
                 )
               }
 
