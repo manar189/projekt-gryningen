@@ -1,3 +1,6 @@
+
+/*       General CSS       */
+
 body {
   background-color: #A5DBD9;
 }
@@ -21,6 +24,31 @@ div {
 }
 
 
+#progressBarFront {
+  height: 5vw;
+  margin-top: 1vw;
+  border-radius: 6vw;
+  background-color: white;
+  z-index: 3;
+  transition: ease-in-out 0.3s;
+}
+
+#progressbarBack {
+  width:70vw;
+  height: 5vw;
+  margin: 0 auto;
+  margin-top: 2vw;
+  border-radius: 6vw;
+  background-color: #638382;
+  z-index: 2;
+
+}
+
+#backButton {
+  width:20vw;
+  height:20vw;
+  background-color: pink;
+}
 
 #left {
  width: 46vw;
@@ -108,47 +136,9 @@ div {
 }
 
 .backButton {
-  width:30vw;
-  height:30vw;
-  margin-bottom: -15vw;
-  transform: rotate(180deg);
-  filter: invert(100%);
-}
-
-#progressBarFront {
-  height: 5vw;
-  margin-top: 1vw;
-  border-radius: 6vw;
-  background-color: white;
-  z-index: 3;
-  transition: ease-in-out 0.3s;
-}
-
-#progressbarBack {
-  width:70vw;
-  height: 5vw;
-  margin: 0 auto;
-  margin-top: 2vw;
-  border-radius: 6vw;
-  background-color: #638382;
-  z-index: 2;
-
-}
-
-#startLogo {
-  width: 80vw;
-  height: 80vw;
-  margin-top:-7vw;
-  margin-left: 10vw;
-  filter: drop-shadow(0px 4px 5px grey);
-  transition: ease-in 0.1s;
-
-}
-
-#startLogo:active {
-
-   filter: drop-shadow(0px 0px 0px grey);
-
+  width:20vw;
+  height:20vw;
+  background-color: pink;
 }
 
 #colorTextHeader {
@@ -170,11 +160,7 @@ div {
   color: white;
 }
 
-#backButton {
-  width:20vw;
-  height:20vw;
-  background-color: pink;
-}
+
 
 #newSearchButton {
   position: absolute;
@@ -189,24 +175,6 @@ div {
   border-top-left-radius: 25vw;
 }
 
-#progressBarFront {
-  height: 5vw;
-  margin-top: 1vw;
-  border-radius: 6vw;
-  background-color: white;
-  z-index: 3;
-}
-
-#progressbarBack {
-  width:70vw;
-  height: 5vw;
-  margin: 0 auto;
-  margin-top: 2vw;
-  border-radius: 6vw;
-  background-color: #638382;
-  z-index: 2;
-
-}
 
 #startLogo {
   width: 80vw;
@@ -230,17 +198,25 @@ div {
 
 /*       css for Start        */
 
-#StartPage {
+
+#startLogo {
+  width: 80vw;
+  height: 80vw;
+  margin-top:-7vw;
+  margin-left: 10vw;
+  filter: drop-shadow(0px 4px 5px grey);
+  transition: ease-in 0.1s;
 
 }
 
+#startLogo:active {
+
+   filter: drop-shadow(0px 0px 0px grey);
+
+}
 
 
 /*       css for Color        */
-
-#ColorPage {
-
-}
 
 .color-grid-container {
   width: 90vw;
@@ -271,6 +247,9 @@ div {
 
 /*       css for Model        */
 
+
+
+
 /*       css for Stripes        */
 
 .revarContainerOuter {
@@ -291,9 +270,6 @@ div {
   box-shadow: 0px 5px 25px -7px #000000;
   flex-grow: 1;
   overflow: auto;
-
-
-
 }
 
 .revar {
@@ -302,36 +278,42 @@ div {
   height: 15vw;
   width: 89%;
   border-radius: 1vw;
-
 }
 
 .texture {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   opacity: 0.2;
   margin-bottom: 2vw;
   height: 15vw;
   width: 80vw;
   border-radius: 1vw;
+  overflow: visible;
 }
 
-.top {
-  height: 25% ;
+.revarTop {
+  position:relative;
+  top:-17.8vw;
+  height:25%;
   border-top-right-radius: 1vw;
   border-top-left-radius: 1vw;
 }
 
-.middle {
+.revarMiddle {
+    position:relative;
+  top:-17.8vw;
   height: 50% ;
 }
 
-.bottom {
+.revarBottom {
+    position:relative;
+  top:-17.8vw;
   height: 25% ;
   border-bottom-right-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
 
 /*       css for Result        */
-
 
 #resultTextHeader {
   font-family: 'Merriweather Sans', sans-serif;
@@ -342,9 +324,10 @@ div {
 }
 
 #resultTextContent {
-  text-align: center;
+  width: 46vw;
+  height: 80vw;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
   color: black;
   padding: 2vw;
   margin: 0;
@@ -356,7 +339,6 @@ div {
   margin: 0 auto;
   padding-top: 8vw;
   background: white;
-  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
   float: left;
   border-top-right-radius: 6vw;
@@ -364,19 +346,19 @@ div {
 }
 
 #resultOvveDiv {
- width: 70vw;
+ width: 46vw;
   height: 80vw;
   margin: 0 auto;
   padding-top: 8vw;
   background: white;
-  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
   float: left;
-  border-radius: 6vw;
-  margin-left: 15vw;
+  border-top-left-radius: 6vw;
+  border-bottom-left-radius: 6vw;
+  margin-left: 8vw;
 }
 
 
-/* css för snazzidazzi */
+/* CSS for snazzidazzi */
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
