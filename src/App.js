@@ -139,8 +139,8 @@ class App extends Component {
                <h1>Ovve</h1>
                <h1>Meister</h1>
             </div>
-            <img class="animated infinite bounce delay-0.5s" src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
-            <div id = "newSearchButton" onClick={this.setAbout}><p>Info</p></div>
+            <img class="animated rotateIn delay-1s" src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
+            <div id = "aboutDiv" onClick={this.setAbout}><p id="infoText">Info</p></div>
             </div>
           )
 

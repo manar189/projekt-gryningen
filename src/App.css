@@ -200,14 +200,21 @@ i {
   color: white;
 }
 
-#newSearchButton {
-  position: absolute;
+#infoText {
+  color:#4F95EB;
   font-family: 'Merriweather Sans', sans-serif;
-  bottom: 0vw;
-  right: 25vw;
+}
+
+#aboutDiv {
+  position: relative;
   width: 50vw;
+<<<<<<< HEAD
   height: 10vw;
   margin: 0 auto;
+=======
+  height: 12vw;
+  margin: 27vw auto;
+>>>>>>> 104e203119026c6b81264ff48b4e3e7fb6c1406c
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
   border-top-right-radius: 25vw;
