@@ -124,12 +124,17 @@ i {
 
 }
 
+i:active {
+  filter: drop-shadow(0px 0px 0px grey);
+}
+
 #returnDiv {
   position:absolute;
   top:10vw;
   left:-10vw;
   width: 25vw;
   height: 17vw;
+  box-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
   background-color:white;
   border-radius: 40vw;
 }
@@ -207,22 +212,6 @@ i {
   font-size: 7vw;
   margin: 0;
   top:3vw;
-}
-
-#aboutDiv {
-  position: relative;
-  width: 50vw;
-  height: 15vw;
-  margin: 0 auto;
-  top: 27vw;
-  height: 12vw;
-  margin: 27vw auto;
-  background: white;
-  box-shadow: 0px 5px 25px -7px #000000;
-  border-top-right-radius: 10vw;
-  border-top-left-radius: 10vw;
-  text-align: center;
-  padding-bottom: 3vw;
 }
 
 #progressBarFront {
@@ -409,6 +398,26 @@ i {
   margin-left: 15vw;
 }
 
+#newSearchButton {
+  position: relative;
+  width: 20vw;
+  height: 15vw;
+  margin: 0 auto;
+  top:30vw;
+  background: white;
+  box-shadow: 0px 5px 25px -7px #000000;
+  border-top-right-radius: 10vw;
+  border-top-left-radius: 10vw;
+  text-align: center;
+  padding-bottom: 3vw;
+}
+
+#newSearchText {
+  font-family: 'Merriweather sans', sans-serif;
+  font-size: 4vw;
+  margin:0vw;
+}
+
 ::-webkit-scrollbar {
    width: 2vw;
 }
@@ -429,12 +438,49 @@ i {
 }
 
 /* css för About */
-
-#aboutText {
-  font-family: 'Merriweather Sans', sans-sans-serif;
-  color: white;
-  font-size: 5vw;
+#aboutDiv {
+  position: relative;
+  width: 20vw;
+  height: 15vw;
+  margin: 0 auto;
+  top:23vw;
+  background: white;
+  box-shadow: 0px 5px 25px -7px #000000;
+  border-top-right-radius: 10vw;
+  border-top-left-radius: 10vw;
   text-align: center;
+  padding-bottom: 3vw;
+}
+
+#aboutTextDiv {
+  width: 90vw;
+  height: 90vw;
+  margin: 0 auto;
+  padding-top: 8vw;
+  background: white;
+  border-radius: 7vw;
+  margin-bottom: 5vw;
+  /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
+  box-shadow: 0px 5px 25px -7px #000000;
+}
+
+#aboutText{
+  font-family: 'Merriweather sans', sans-serif;
+  font-size: 4vw;
+  margin:8vw;
+  margin-top:0;
+}
+
+#aboutIcon {
+  margin-left: 0vw;
+}
+
+#hatt {
+  position: absolute;
+  top:118vw;
+  left:40vw;
+  z-index:-1;
+  width: 100vw;
 }
 
 
