@@ -140,7 +140,7 @@ class App extends Component {
                <h1>Meister</h1>
             </div>
             <img class="animated rotateIn delay-1s" src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
-            <div id = "newSearchButton" onClick={this.setAbout}><p>Info</p></div>
+            <div id = "aboutDiv" onClick={this.setAbout}><p id="infoText">Info</p></div>
             </div>
           )
 
