@@ -18,8 +18,8 @@ class About extends Component {
 
     return (
       <div>
-<<<<<<< HEAD
-          <img src ="images/arrow.svg" alt="Kunde inte ladda bilden" className="backButton" onClick={(b) => this.backFunc(b)}></img>
+        <div id="returnDiv">
+        <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
           <h1 id="colorTextHeader"> Info </h1>
           <div  id="aboutText">
              <p> Året var 1944. Trupperna från öst hade lanserat en ny attack
@@ -31,11 +31,7 @@ class About extends Component {
              Gryningen utföra ett KOMA-projekt utan dess like.
              </p>
          </div>
-=======
-      <div id="returnDiv">
-      <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
-      </div>             <h1 id="colorTextHeader"> About </h1>
->>>>>>> 104e203119026c6b81264ff48b4e3e7fb6c1406c
+      </div>
       </div>
     );
   }
