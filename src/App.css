@@ -111,6 +111,7 @@ i {
   font-size: 10vw;
   margin-left: 11vw;
   margin-top: 3.5vw;
+  animation: none !important;
 
 }
 
@@ -122,6 +123,7 @@ i {
   height: 17vw;
   background-color:white;
   border-radius: 40vw;
+  animation: none !important;
 }
 
 .backButton {
