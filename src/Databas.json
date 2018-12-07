@@ -40,7 +40,7 @@
     "campus": "Norrköping"
   },
   {
-    "prog": "Kandidatprogram i flygtransport och logistik eller Kandidatprogram i samhällets logistik",
+    "prog": "Kandidatprogram i flygtransport och logistik eller i Samhällets logistik",
     "model": "Overall",
     "color": "Blå",
     "hexColor": "#000094",
@@ -77,14 +77,6 @@
     "color": "Brun",
     "hexColor": "#A85400",
     "revar": {"1": "#FFF500", "2": "#92DF00", "3": "#FFF500"},
-    "campus": "Linköping"
-  },
-  {
-    "prog": "Civilingenjör i teknisk biologi",
-    "model": "Overall",
-    "color": "Grön",
-    "hexColor": "#007A01",
-    "revar": {"1": "#FFFFFF", "2": "#FFF500", "3": "#FFFFFF"},
     "campus": "Linköping"
   },
   {
