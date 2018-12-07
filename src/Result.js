@@ -53,9 +53,10 @@ class Result extends Component {
 
     return (
       <div>
-      <img src ="images/arrow.svg" className="backButton" onClick={(b) => this.backFunc(b)}></img>
+      <div id="returnDiv">
+      <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
+      </div>   
       <h1 id="resultTextHeader"> Resultat </h1>
-
       <div id = "resultOvveDiv">
         <p id="resultTextContent"> {data.prog} </p>
         {this.renderOvve()}

@@ -63,8 +63,10 @@ class Model extends Component {
   render() {
     return(
       <div className="App">
-        <img src ="images/arrow.svg" alt="Kunde inte ladda bilden" className="backButton" onClick={(b) => this.backFunc(b)}></img>
-        <h1 id="colorTextHeader">Välj modell</h1>
+      <div id="returnDiv">
+      <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
+      </div>            
+      <h1 id="colorTextHeader">Välj modell</h1>
         <div id = "left" onClick={(e) => this.nextPage("Overall", false, e)} style={{cursor:'pointer'}}>
           <img src = "images/ovve_bakgrund.png" alt="Kunde inte ladda bilden" className ="ovveBakgrund" style={{background:this.props.hex}} ></img>
           <img src = "images/ovve_skuggor.svg" alt="Kunde inte ladda bilden" className ="ovveSkugga" ></img>
