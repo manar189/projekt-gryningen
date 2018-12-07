@@ -5,7 +5,7 @@ body {
 h1 {
   text-align: center;
   animation: fadeIn ease-in 1;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
   line-height: 22vw;
 
 }
@@ -13,12 +13,11 @@ h1 {
 img {
   text-align: center;
   animation: fadeIn ease-in 1;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
 }
 
 div {
-  animation: fadeIn ease-in 1;
-  animation-duration: 0.3s;
+
 }
 
 #left {
@@ -32,6 +31,8 @@ div {
   float: left;
   border-top-right-radius: 6vw;
   border-bottom-right-radius: 6vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #right {
@@ -46,6 +47,8 @@ div {
   border-top-left-radius: 6vw;
   border-bottom-left-radius: 6vw;
   margin-left: 8vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #revarSVG{
@@ -121,11 +124,12 @@ i {
   font-size: 10vw;
   margin-left: 11vw;
   margin-top: 3.5vw;
-
+  animation: ease-in 0.2s;
 }
 
 i:active {
   filter: drop-shadow(0px 0px 0px grey);
+
 }
 
 #returnDiv {
@@ -137,6 +141,12 @@ i:active {
   box-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
   background-color:white;
   border-radius: 40vw;
+  transition: ease-in 0.1s;
+
+}
+
+#returnDiv:active {
+  filter: drop-shadow(0px 0px 0px grey);
 }
 
 .backButton {
@@ -214,25 +224,6 @@ i:active {
   top:3vw;
 }
 
-#progressBarFront {
-  height: 5vw;
-  margin-top: 1vw;
-  border-radius: 6vw;
-  background-color: white;
-  z-index: 3;
-}
-
-#progressbarBack {
-  width:70vw;
-  height: 5vw;
-  margin: 0 auto;
-  margin-top: 2vw;
-  border-radius: 6vw;
-  background-color: #638382;
-  z-index: 2;
-
-}
-
 #startLogo {
   width: 80vw;
   height: 80vw;
@@ -263,6 +254,8 @@ i:active {
   margin-bottom: 5vw;
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 .grid-item {
@@ -275,6 +268,8 @@ i:active {
   text-align: center;
   /*Skugga färgrutor: opacity 23% y:21px x:0px blur:10px*/
   box-shadow: 0px 5px 20px -7px #000000;
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 /*       css for Model        */
@@ -284,6 +279,8 @@ i:active {
   flex-grow: 1;
   display:flex;
   flex-direction: column;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 .revar-container {
@@ -299,6 +296,8 @@ i:active {
   flex-grow: 1;
   overflow: auto;
   box-shadow: inset 0px -4px 12px 0px rgba(0,0,0,0.34);
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 .revar {
@@ -307,6 +306,8 @@ i:active {
   height: 15vw;
   width: 89%;
   border-radius: 1vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 
 }
 
@@ -326,12 +327,16 @@ i:active {
   height: 25% ;
   border-top-right-radius: 1vw;
   border-top-left-radius: 1vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 .middle {
   position: relative;
  top:-17.6vw;
   height: 50% ;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 .bottom {
@@ -340,6 +345,8 @@ i:active {
   height: 25% ;
   border-bottom-right-radius: 1vw;
   border-bottom-left-radius: 1vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 /*       css for Result        */
@@ -360,6 +367,8 @@ i:active {
   color: black;
   padding: 2vw;
   margin: 0;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #resultTextCampus {
@@ -382,6 +391,8 @@ i:active {
   float: left;
   border-top-right-radius: 6vw;
   border-bottom-right-radius: 6vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #resultOvveDiv {
@@ -396,26 +407,28 @@ i:active {
   float: left;
   border-radius: 6vw;
   margin-left: 15vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #newSearchButton {
   position: relative;
-  width: 20vw;
-  height: 15vw;
+  width: 50vw;
+  height: 10vw;
   margin: 0 auto;
-  top:30vw;
+  top:110vw;
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
   border-top-right-radius: 10vw;
   border-top-left-radius: 10vw;
-  text-align: center;
-  padding-bottom: 3vw;
+  animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #newSearchText {
-  font-family: 'Merriweather sans', sans-serif;
-  font-size: 4vw;
-  margin:0vw;
+  font-size: 5vw;
+  color: pink;
+  height: 10vw;
 }
 
 ::-webkit-scrollbar {
@@ -450,6 +463,8 @@ i:active {
   border-top-left-radius: 10vw;
   text-align: center;
   padding-bottom: 3vw;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #aboutTextDiv {
@@ -462,6 +477,8 @@ i:active {
   margin-bottom: 5vw;
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
+    animation: fadeIn ease-in 1;
+  animation-duration: 0.2s;
 }
 
 #aboutText{
