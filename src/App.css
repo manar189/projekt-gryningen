@@ -48,23 +48,24 @@ div {
   margin-left: 8vw;
 }
 
-.ovveRevarOver {
-  z-index: 4;
-  opacity: 0.6;
+#revarSVG{
+  z-index: 6;
   position: absolute;
-  height: 60vw;
-  margin-left: 3vw;
+  height: 75vw;
+  margin-left: 8vw;
   margin-top: 4vw;
-  stroke: solid red 1vw;
+  opacity: 0.7;
 }
 
-.ovveRevarUnder {
-  z-index: 5;
-  opacity: 0.8;
-  position: absolute;
-  height: 60vw;
-  margin-left: 3vw;
-  margin-top: 4vw;
+.st0 {
+  fill: red;
+}
+
+.st1 {
+  fill: red;
+}
+
+.st2{
   fill: red;
 }
 
@@ -86,6 +87,15 @@ div {
   margin-top: 4vw;
 }
 
+#resultatOvveBakgrund{
+  height: 75vw;
+  margin-left: 8vw;
+}
+
+#resultatOvveSkugga{
+  height: 75vw;
+  margin-left: 8vw;
+}
 
 #colorTextHeader {
   font-family: 'Merriweather Sans', sans-serif;
@@ -190,14 +200,9 @@ i {
   color: white;
 }
 
-#backButton {
-  width:20vw;
-  height:20vw;
-  background-color: pink;
-}
-
 #newSearchButton {
   position: absolute;
+  font-family: 'Merriweather Sans', sans-serif;
   bottom: 0vw;
   right: 25vw;
   width: 50vw;
@@ -207,6 +212,8 @@ i {
   box-shadow: 0px 5px 25px -7px #000000;
   border-top-right-radius: 25vw;
   border-top-left-radius: 25vw;
+  text-align: center;
+  padding-bottom: 3vw;
 }
 
 #progressBarFront {
@@ -247,21 +254,6 @@ i {
   background-color: red;
 }
 
-
-/*       css for Start        */
-
-#StartPage {
-
-}
-
-
-
-/*       css for Color        */
-
-#ColorPage {
-
-}
-
 .color-grid-container {
   width: 90vw;
   height: 100vw;
@@ -288,10 +280,14 @@ i {
   box-shadow: 0px 5px 20px -7px #000000;
 }
 
-
 /*       css for Model        */
 
 /*       css for Stripes        */
+.revarContainerOuter {
+  flex-grow: 1;
+  display:flex;
+  flex-direction: column;
+}
 
 .revar-container {
   width: 90vw;
@@ -305,9 +301,7 @@ i {
   box-shadow: 0px 5px 25px -7px #000000;
   flex-grow: 1;
   overflow: auto;
-
-
-
+  box-shadow: inset 0px -4px 12px 0px rgba(0,0,0,0.34);
 }
 
 .revar {
@@ -395,9 +389,10 @@ i {
 
 #resultOvveDiv {
  width: 70vw;
-  height: 80vw;
+  height: 120vw;
   margin: 0 auto;
-  padding-top: 8vw;
+  margin-top: -13vw;
+  padding-top: 3vw;
   background: white;
   /* Skugga stor-box: opacity 23% y:21px x:0px blur:31px*/
   box-shadow: 0px 5px 25px -7px #000000;
