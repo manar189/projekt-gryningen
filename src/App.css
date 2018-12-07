@@ -111,7 +111,7 @@ div {
 
 #startTextHeader h1 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 15vw;
+  font-size: 20vw;
   margin-top: -19vw;
   color: white;
 }
@@ -201,24 +201,26 @@ i {
 }
 
 #infoText {
+  position:relative;
   color:#4F95EB;
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 7vw;
+  margin: 0;
+  top:3vw;
 }
 
 #aboutDiv {
   position: relative;
   width: 50vw;
-<<<<<<< HEAD
-  height: 10vw;
+  height: 15vw;
   margin: 0 auto;
-=======
+  top: 27vw;
   height: 12vw;
   margin: 27vw auto;
->>>>>>> 104e203119026c6b81264ff48b4e3e7fb6c1406c
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
-  border-top-right-radius: 25vw;
-  border-top-left-radius: 25vw;
+  border-top-right-radius: 10vw;
+  border-top-left-radius: 10vw;
   text-align: center;
   padding-bottom: 3vw;
 }
@@ -245,7 +247,6 @@ i {
 #startLogo {
   width: 80vw;
   height: 80vw;
-  margin-top:-7vw;
   filter: drop-shadow(0px 4px 5px grey);
   transition: ease-in 0.1s;
 }
