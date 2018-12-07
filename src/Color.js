@@ -28,7 +28,9 @@ class Color extends Component {
 
     return (
       <div className="App">
-        <img src ="images/arrow.svg" alt="Kunde inte ladda bilden" className="backButton" onClick={(b) => this.backFunc(b)}></img>
+      <div id="returnDiv">
+      <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
+      </div>    
           <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
         {ColorData.map((item, i) =>{
