@@ -206,7 +206,7 @@ i {
   bottom: 0vw;
   right: 25vw;
   width: 50vw;
-  height: 12vw;
+  height: 10vw;
   margin: 0 auto;
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
@@ -371,7 +371,7 @@ i {
   font-size: 5vw;
   color: black;
   padding: 2vw;
-  margin: 0;
+  margin-top: 80vw;
 }
 
 #resultTextDiv {
@@ -406,7 +406,7 @@ i {
 }
 
 ::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 2vw rgba(0,0,0,0.3); 
+   -webkit-box-shadow: inset 0 0 2vw rgba(0,0,0,0.3);
    border-radius: 10vw;
    border-top-left-radius: 0;
    border-bottom-left-radius: 0;
@@ -417,8 +417,19 @@ i {
    border-radius: 50px;
    border-top-left-radius: 0;
    border-bottom-left-radius: 0;
-  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
+
+/* css för About */
+
+#aboutText {
+  font-family: 'Merriweather Sans', sans-sans-serif;
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+}
+
+
 /* css för snazzidazzi */
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

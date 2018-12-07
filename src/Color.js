@@ -30,14 +30,14 @@ class Color extends Component {
       <div className="App">
       <div id="returnDiv">
       <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
-      </div>    
+      </div>
           <h1 id="colorTextHeader"> Välj färg </h1>
       <div className="color-grid-container">
         {ColorData.map((item, i) =>{
 
           if(item.hex.length === 2){
                     return <div className="grid-item" key={i} onClick={(e) => this.myFunc(item,e)}
-                    style={{ background: 'linear-gradient(to right,'+ item.hex[0] +' 50%, '+ item.hex[1] +' 50%' , cursor:'pointer'}}>
+                    style={{ background: 'linear-gradient(to left,'+ item.hex[0] +' 50%, '+ item.hex[1] +' 50%' , cursor:'pointer'}}>
 
                     </div>
           }
