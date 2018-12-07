@@ -59,7 +59,7 @@ class Result extends Component {
       <div id = "resultOvveDiv">
         <p id="resultTextContent"> {data.prog} </p>
         {this.renderOvve()}
-
+        <p id="resultTextCampus"> {data.campus} </p>
       </div>
       <div id="newSearchButton" onClick={(n) => this.newSearch(n)}><p>Ny sökning</p></div>
       </div>

@@ -140,7 +140,7 @@ class App extends Component {
                <h1>Meister</h1>
             </div>
             <img src="startLogo.png" alt="Kunde inte ladda bilden" id="startLogo" onClick={this.startSearch}></img>
-            <div id = "newSearchButton" onClick={this.setAbout}></div>
+            <div id = "newSearchButton" onClick={this.setAbout}><p>Info</p></div>
             </div>
           )
 
@@ -175,9 +175,6 @@ class App extends Component {
         </div>
         )
     }
-
-
-
 }
 
 export default App;
