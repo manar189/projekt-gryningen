@@ -165,8 +165,8 @@ class Result extends Component {
         {this.renderOvve()}
         <p id="resultTextCampus"> {data.campus} </p>
       </div>
-      <div id="newSearchButton" onClick={(n) => this.newSearch(n)}>
-      <p id="newSearchText"> Ny sökning </p>
+      <div class="animated infinite pulse delay-5s" id="newSearchButton" onClick={(n) => this.newSearch(n)}>
+      <i id="newSearchIcon" class="fas fa-chevron-circle-left" onClick={(n) => this.newSearch(n)}></i><p id="newSearchText"> Ny sökning </p>
       </div>
       </div>
       );

@@ -44,7 +44,7 @@
     "model": "Overall",
     "color": "Blå",
     "hexColor": "#2A3C7F",
-    "revar": {"1": "#140F18", "2": "#722F37", "3": "#140F18"},
+    "revar": {"1": "#BD0043", "2": "#BD0043", "3": "#BD0043"},
     "campus": "Norrköping"
   },
   {
@@ -219,7 +219,7 @@
     "prog": "Socionomprogrammet",
     "model": "Hängsel",
     "color": "Gul",
-    "hexColor": "#F1F1F1",
+    "hexColor": "#FEBC0E",
     "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
     "campus": "Norrköping"
   },
@@ -227,7 +227,7 @@
     "prog": "Socionomprogrammet",
     "model": "Hängsel",
     "color": "Orange",
-    "hexColor": "#F1F1F1",
+    "hexColor": "#FEBC0E",
     "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
     "campus": "Norrköping"
   },

@@ -163,9 +163,17 @@ class App extends Component {
       const barProgress = {width: this.state.barWidth+"%"};
       if(this.state.currentPage != page.ABOUT)
       {
-        return <div id="progressbarBack"><div id="progressBarFront" style={barProgress}></div></div>
+        if(this.state.barWidth === 100)
+        {
+          return <div id="progressbarBack"><div id="progressBarResult" style={barProgress}></div></div>
+        }
+        else {
+        {
+          return <div id="progressbarBack"><div id="progressBarFront" style={barProgress}></div></div>
+        }
       }
     }
+  }
 
     render() {
       return (
