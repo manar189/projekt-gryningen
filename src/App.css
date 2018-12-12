@@ -474,7 +474,7 @@ i:active {
   border-top-left-radius: 10vw;
   text-align: center;
   padding-bottom: 3vw;
-    animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
   animation-duration: 0.2s;
 }
 

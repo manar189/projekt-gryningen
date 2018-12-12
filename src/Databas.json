@@ -160,7 +160,7 @@
     "campus": "Linköping"
   },
   {
-    "prog": "Manlig civilingenjör i eniergi, miljö, management",
+    "prog": "Manlig civilingenjör i energi, miljö, management",
     "model": "Overall",
     "color": "Röd",
     "hexColor": "#FF0000",
@@ -168,7 +168,7 @@
     "campus": "Linköping"
   },
   {
-    "prog": "Kvinnlig civilingenjör i eniergi, miljö, management",
+    "prog": "Kvinnlig civilingenjör i energi, miljö, management",
     "model": "Overall",
     "color": "RödGul",
     "hexColor": {"1": "#FF0000", "2": "#FFF500"},

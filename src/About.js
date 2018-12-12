@@ -19,7 +19,7 @@ class About extends Component {
     return (
       <div>
       <div id="returnDiv">
-      <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
+      <i className="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
       </div>
       <div id = "startTextHeader">
         <h1>Om</h1>
