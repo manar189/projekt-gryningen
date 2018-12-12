@@ -3,31 +3,31 @@
     "prog": "Civilingenjör i medieteknik",
     "model": "Overall",
     "color": "Orange",
-    "hexColor": "#EC6610",
-    "revar": {"1": "#000000", "2": "#FFF500", "3": "#000000"},
+    "hexColor": "#EC660F",
+    "revar": {"1": "#140F18", "2": "#FFF500", "3": "#140F18"},
     "campus": "Norrköping"
   },
   {
-    "prog": "Civilingenjör i elektonikdesign",
+    "prog": "Civilingenjör i elektronikdesign",
     "model": "Overall",
     "color": "Brun",
     "hexColor": "#C3B091",
-    "revar": {"1": "#000000", "2": "#FFF500", "3": "#000000"},
+    "revar": {"1": "#140F18", "2": "#FFF500", "3": "#140F18"},
     "campus": "Norrköping"
   },
   {
     "prog": "Civilingenjör i kommunikation och transportsystem",
     "model": "Overall",
     "color": "Blå",
-    "hexColor": "#000094",
-    "revar": {"1": "#000000", "2": "#FFF500", "3": "#000000"},
+    "hexColor": "#22519B",
+    "revar": {"1": "#140F18", "2": "#FFF500", "3": "#140F18"},
     "campus": "Norrköping"
   },
   {
     "prog": "Grafisk design och kommunikation",
     "model": "Hängsel",
     "color": "Grön",
-    "hexColor": "#006A4E",
+    "hexColor": "#006C3A",
     "revar": {"1": "#FFDC73", "2": "#FFDC73", "3": "#FFDC73"},
     "campus": "Norrköping"
   },
@@ -35,7 +35,7 @@
     "prog": "Högskoleingenjör i byggnadsteknik",
     "model": "Overall",
     "color": "Grå",
-    "hexColor": "#B3B3B3",
+    "hexColor": "#ACADB3",
     "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
     "campus": "Norrköping"
   },
@@ -43,15 +43,15 @@
     "prog": "Kandidatprogram i flygtransport och logistik eller i Samhällets logistik",
     "model": "Overall",
     "color": "Blå",
-    "hexColor": "#000094",
-    "revar": {"1": "#000000", "2": "#722F37", "3": "#000000"},
+    "hexColor": "#2A3C7F",
+    "revar": {"1": "#140F18", "2": "#722F37", "3": "#140F18"},
     "campus": "Norrköping"
   },
   {
     "prog": "Civilingenjör i datateknik",
     "model": "Overall",
     "color": "Brun",
-    "hexColor": "#A85400",
+    "hexColor": "#986500",
     "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -115,7 +115,7 @@
     "prog": "Civilingenjör i teknisk fysik och elektroteknik",
     "model": "Overall",
     "color": "Svart",
-    "hexColor": "#000000",
+    "hexColor": "#140F18",
     "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -123,7 +123,7 @@
     "prog": "Civilingenjör i medicinsk teknik",
     "model": "Overall",
     "color": "Svart",
-    "hexColor": "#000000",
+    "hexColor": "#140F18",
     "revar": {"1": "#FFF500", "2": "#17962C", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -219,7 +219,7 @@
     "prog": "Socionomprogrammet",
     "model": "Hängsel",
     "color": "Gul",
-    "hexColor": "#FF9E00",
+    "hexColor": "#F1F1F1",
     "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
     "campus": "Norrköping"
   },
@@ -227,7 +227,7 @@
     "prog": "Socionomprogrammet",
     "model": "Hängsel",
     "color": "Orange",
-    "hexColor": "#FF9E00",
+    "hexColor": "#F1F1F1",
     "revar": {"1": "#FF9E00", "2": "#FF9E00", "3": "#FF9E00"},
     "campus": "Norrköping"
   },
@@ -276,7 +276,7 @@
     "model": "Overall",
     "color": "Vit",
     "hexColor": "#FFFFFF",
-    "revar": {"1": "#580272", "2": "#000000", "3": "#580272"},
+    "revar": {"1": "#580272", "2": "#140F18", "3": "#580272"},
     "campus": "Linköping"
   },
   {
@@ -291,7 +291,7 @@
     "prog": "Statistik och dataanalysprogrammet",
     "model": "Overall",
     "color": "Svart",
-    "hexColor": "#000000",
+    "hexColor": "#140F18",
     "revar": {"1": "#FF0000", "2": "#FF0000", "3": "#FF0000"},
     "campus": "Linköping"
   },
@@ -299,7 +299,7 @@
     "prog": "Kultur, Samhälle och Mediegestaltning",
     "model": "Overall",
     "color": "Svart",
-    "hexColor": "#000000",
+    "hexColor": "#140F18",
     "revar": {"1": "#FF0000", "2": "#FFFFFF", "3": "#FF0000"},
     "campus": "Norrköping"
   },
@@ -315,7 +315,7 @@
     "prog": "Miljövetarprogrammet",
     "model": "Overall",
     "color": "Blå",
-    "hexColor": "#000094",
+    "hexColor": "#002450",
     "revar": {"1": "#17962C", "2": "#17962C", "3": "#17962C"},
     "campus": "Norrköping"
   },
@@ -331,8 +331,8 @@
     "prog": "Sektionen för Slöjd, Hantverk och Formgivning",
     "model": "Hängsel",
     "color": "GrönSvart",
-    "hexColor": {"1": "#92DF00", "2": "#000000"},
-    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "hexColor": {"1": "#92DF00", "2": "#140F18"},
+    "revar": {"1": "#140F18", "2": "#140F18", "3": "#140F18"},
     "campus": "Linköping"
   },
   {
@@ -348,7 +348,7 @@
     "model": "Overall",
     "color": "Röd",
     "hexColor": "#FF0000",
-    "revar": {"1": "#000000", "2": "#000000", "3": "#000000"},
+    "revar": {"1": "#140F18", "2": "#140F18", "3": "#140F18"},
     "campus": "Linköping eller/och Norrköping"
   },
   {
@@ -379,7 +379,7 @@
     "prog": "Sjuksköterska",
     "model": "Hängsel",
     "color": "Lila",
-    "hexColor": "#580272",
+    "hexColor": "#B589B3",
     "revar": {"1": "#580272", "2": "#580272", "3": "#580272"},
     "campus": "Norrköping"
   },
