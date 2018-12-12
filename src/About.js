@@ -34,7 +34,7 @@ class About extends Component {
              Gryningen utföra ett KOMA-projekt utan dess like.
              </p>
              <p id="aboutText">
-             Projekt Gryningen vill tacka Amanda Valkonen!
+             Tack Amanda Valkonen för ovve-illustrationerna!
              </p>
          </div>
          <img class="animated swing delay-0.5s" id="hatt" src="hatt.png"></img>

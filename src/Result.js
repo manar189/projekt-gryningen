@@ -157,7 +157,7 @@ class Result extends Component {
       <div>
       <div id="returnDiv">
       <i class="fas fa-chevron-circle-left" onClick={(b) => this.backFunc(b)}></i>
-      </div>   
+      </div>
       <h1 id="resultTextHeader"> Resultat </h1>
       <div id = "resultOvveDiv">
         <p id="resultTextContent"> {data.prog} </p>
@@ -166,7 +166,7 @@ class Result extends Component {
         <p id="resultTextCampus"> {data.campus} </p>
       </div>
       <div id="newSearchButton" onClick={(n) => this.newSearch(n)}>
-      <h3 id="newSearchText">Tillbaka!</h3>
+      <p id="newSearchText"> Ny sökning </p>
       </div>
       </div>
       );

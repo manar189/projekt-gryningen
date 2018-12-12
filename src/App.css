@@ -412,11 +412,13 @@ i:active {
 }
 
 #newSearchButton {
-  position: relative;
+  position: absolute;
   width: 50vw;
-  height: 10vw;
+  height: 12vw;
   margin: 0 auto;
-  top:110vw;
+  /*top:112.8vw;*/
+  bottom: 0vw;
+  margin-left: 25vw;
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
   border-top-right-radius: 10vw;
@@ -425,10 +427,18 @@ i:active {
   animation-duration: 0.2s;
 }
 
+
 #newSearchText {
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 5vw;
-  color: pink;
+  color: black;
   height: 10vw;
+  position: absolute;
+  margin-left: 18vw;
+  margin: 0 auto;
+  margin-top:2vw;
+  margin-left: 11.5vw;
+
 }
 
 ::-webkit-scrollbar {
@@ -452,11 +462,12 @@ i:active {
 
 /* css för About */
 #aboutDiv {
-  position: relative;
+  position: absolute;
   width: 20vw;
   height: 15vw;
   margin: 0 auto;
-  top:23vw;
+  bottom: 0vw;
+  margin-left: 40vw;
   background: white;
   box-shadow: 0px 5px 25px -7px #000000;
   border-top-right-radius: 10vw;
@@ -469,7 +480,7 @@ i:active {
 
 #aboutTextDiv {
   width: 90vw;
-  height: 90vw;
+  height: 112vw;
   margin: 0 auto;
   padding-top: 8vw;
   background: white;
@@ -494,10 +505,10 @@ i:active {
 
 #hatt {
   position: absolute;
-  top:118vw;
-  left:40vw;
+  top:5vw;
+  left:50vw;
   z-index:-1;
-  width: 100vw;
+  width: 80vw;
 }
 
 
