@@ -51,7 +51,7 @@
     "prog": "Civilingenjör i datateknik",
     "model": "Overall",
     "color": "Brun",
-    "hexColor": "#986500",
+    "hexColor": "#8F7745",
     "revar": {"1": "#FFF500", "2": "#FFF500", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -59,7 +59,7 @@
     "prog": "Civilingenjör i informationsteknologi",
     "model": "Overall",
     "color": "Brun",
-    "hexColor": "#A85400",
+    "hexColor": "#8F7745",
     "revar": {"1": "#FFF500", "2": "#DE3163", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -67,7 +67,7 @@
     "prog": "Civilingenjör i mjukvaruteknik",
     "model": "Overall",
     "color": "Brun",
-    "hexColor": "#A85400",
+    "hexColor": "#8F7745",
     "revar": {"1": "#FFF500", "2": "#000094", "3": "#FFF500"},
     "campus": "Linköping"
   },
@@ -75,7 +75,7 @@
     "prog": "Kandidatprogram i innovativ programmering",
     "model": "Overall",
     "color": "Brun",
-    "hexColor": "#A85400",
+    "hexColor": "#8F7745",
     "revar": {"1": "#FFF500", "2": "#92DF00", "3": "#FFF500"},
     "campus": "Linköping"
   },
