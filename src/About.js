@@ -32,9 +32,14 @@ class About extends Component {
       </div>
           <div id="aboutTextDiv">
              <p id="aboutText"> Bli en ovvemeister med OvveMeister! Ta reda på
-             vilket program en student vid Linköpings Universitet läser genom
-             ovven den bär.
-             </p>
+             vilket program en student vid Linköpings Universitet läser via
+             ovven den bär. Ta reda på:</p>
+
+             <p id="aboutText">1. Ovvens färg</p>
+             <p id="aboutText">2. Ovvens modell</p>
+             <p id="aboutText">3. Ovvens revär (tygrämsan längs ovvens ben)</p>
+             <p id="aboutText">4. Färdig!</p>
+
              <p id="aboutText">
              Tack Amanda Valkonen för ovve-illustrationerna!
              </p>
